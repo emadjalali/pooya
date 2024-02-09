@@ -1,14 +1,13 @@
-import Header from './header'
-import Footer from './footer';
-const Layout = ({children}) => {
-    return (
-        <main>
-            <Header />
-            {children}
-            <Footer />
-        </main>
-        
-    );
-}
+import Header from "./headerC";
+import Footer from "./footerC";
+const Layout = ({ children }) => {
+	return (
+		<main style={{ overflow: "hidden" }}>
+			<Header />
+			{children}
+			<Footer />
+		</main>
+	);
+};
 
 export default Layout;
