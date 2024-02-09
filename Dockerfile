@@ -8,7 +8,8 @@ RUN apk add git
 COPY package*.json ./
 
 RUN npm install -g npm
-RUN npm install  --omit=dev
+# RUN npm install  --omit=dev
+RUN npm install
 # RUN npm audit --audit-level=critical fix
 
 COPY  . .
