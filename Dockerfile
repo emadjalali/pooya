@@ -25,7 +25,7 @@ RUN npm install pm2 -g --silent
 USER node
 
 # Expose the listening port
-EXPOSE 3500
+EXPOSE 3000
 
 # Run npm start script with PM2 when container starts
 CMD [ "pm2-runtime", "npm", "--", "start"]
