@@ -13,116 +13,134 @@ import IntegratedBrand from "@/components/BrandingForPage/section2/pattern2/Inte
 
 const SectionTwo = () => {
 	return (
-		<div style={{ position: "relative" }}>
-			<Image
-				src={BigQuestion}
-				alt='big question'
+		<div
+			style={{
+				position: "relative",
+				width: "100%",
+				paddingTop: "56%",
+				margin: "auto",
+				// backgroundImage: "url('section2.jpg')",
+				// backgroundSize: "cover",
+			}}>
+			<div
 				style={{
-					width: "26%",
-					position: "relative",
+					position: "absolute",
+					top: "0%",
+					width: "75%",
 					margin: "auto",
-					marginTop: "10%",
-				}}
-			/>
-			<Image
-				src={BrandDiscovery}
-				style={{
-					width: "3.5%",
-					position: "absolute",
-					left: "21%",
-					marginTop: "10%",
-				}}
-			/>
-			<Image
-				src={why}
-				style={{
-					width: "25%",
-					position: "absolute",
-					left: "26.5%",
-					marginTop: "10%",
-				}}
-			/>
-			<Image
-				src={AreYou}
-				style={{
-					width: "5%",
-					position: "absolute",
-					left: "53%",
-					marginTop: "12%",
-				}}
-			/>
-			<Image
-				src={who}
-				style={{
-					width: "25%",
-					position: "absolute",
-					left: "31%",
-					marginTop: "19%",
-				}}
-			/>
-			<Image
-				src={AreYou}
-				style={{
-					width: "5%",
-					position: "absolute",
-					left: "57%",
-					marginTop: "21%",
-				}}
-			/>
-			<Image
-				src={BrandStrategy}
-				style={{
-					width: "12%",
-					position: "absolute",
-					left: "64%",
-					marginTop: "20%",
-				}}
-			/>
-			<Image
-				src={how}
-				style={{
-					width: "25%",
-					position: "absolute",
-					left: "37%",
-					marginTop: "28%",
-				}}
-			/>
-			<Image
-				src={doYou}
-				style={{
-					width: "15%",
-					position: "absolute",
-					left: "64%",
-					marginTop: "30%",
-				}}
-			/>
-			<Image
-				src={Marketing}
-				style={{
-					width: "25%",
-					position: "absolute",
-					left: "37%",
-					marginTop: "36%",
-				}}
-			/>
-			<Image
-				src={live}
-				style={{
-					width: "25%",
-					position: "absolute",
-					left: "37%",
-					marginTop: "44%",
-				}}
-			/>
-			<Image
-				src={IntegratedBrand}
-				style={{
-					width: "23%",
-					position: "absolute",
-					left: "37%",
-					marginTop: "51%",
-				}}
-			/>
+					left: "50%",
+					transform: "translate(-50%)",
+				}}>
+				<Image
+					src={BigQuestion}
+					alt='big question'
+					style={{
+						width: "25%",
+						position: "relative",
+						marginLeft: "36%",
+						marginTop: "11%",
+					}}
+				/>
+				<Image
+					src={BrandDiscovery}
+					style={{
+						width: "3.3%",
+						position: "absolute",
+						left: "20.3%",
+						marginTop: "8.5%",
+					}}
+				/>
+				<Image
+					src={why}
+					style={{
+						width: "24%",
+						position: "absolute",
+						left: "25.5%",
+						marginTop: "8.5%",
+					}}
+				/>
+				<Image
+					src={AreYou}
+					style={{
+						width: "5%",
+						position: "absolute",
+						left: "51%",
+						marginTop: "10.3%",
+					}}
+				/>
+				<Image
+					src={who}
+					style={{
+						width: "25.6%",
+						position: "absolute",
+						left: "30.2%",
+						marginTop: "16.6%",
+					}}
+				/>
+				<Image
+					src={AreYou}
+					style={{
+						width: "5%",
+						position: "absolute",
+						left: "56.7%",
+						marginTop: "18.7%",
+					}}
+				/>
+				<Image
+					src={BrandStrategy}
+					style={{
+						width: "12%",
+						position: "absolute",
+						left: "63.3%",
+						marginTop: "18%",
+					}}
+				/>
+				<Image
+					src={how}
+					style={{
+						width: "25.6%",
+						position: "absolute",
+						left: "36%",
+						marginTop: "25%",
+					}}
+				/>
+				<Image
+					src={doYou}
+					style={{
+						width: "14.7%",
+						position: "absolute",
+						left: "63%",
+						marginTop: "26.7%",
+					}}
+				/>
+				<Image
+					src={Marketing}
+					style={{
+						width: "25.5%",
+						position: "absolute",
+						left: "36.2%",
+						marginTop: "33.3%",
+					}}
+				/>
+				<Image
+					src={live}
+					style={{
+						width: "28%",
+						position: "absolute",
+						left: "35.8%",
+						marginTop: "40.5%",
+					}}
+				/>
+				<Image
+					src={IntegratedBrand}
+					style={{
+						width: "25.5%",
+						position: "absolute",
+						left: "36%",
+						marginTop: "48%",
+					}}
+				/>
+			</div>
 		</div>
 	);
 };

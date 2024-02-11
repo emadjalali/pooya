@@ -10,106 +10,127 @@ function HowItWorks() {
 		marginTop: "50px",
 	};
 	return (
-		<>
+		<div
+			style={{
+				position: "relative",
+				width: "100%",
+				paddingTop: "112%",
+				margin: "auto",
+				backgroundImage: "url('section5.jpg')",
+				backgroundSize: "cover",
+			}}>
 			<div
 				style={{
-					textAlign: "center",
-					fontSize: "30px",
-					marginTop: "120px",
-				}}>
-				<h1 style={{ fontSize: "50px" }}>How It Works?</h1>
-				<p>(The Process)</p>
-			</div>
-			<Image
-				src={starLine}
-				style={{
-					width: "80px",
 					position: "absolute",
-					right: "33%",
-					marginTop: "-8%",
-				}}
-			/>
-			<div
-				style={{
-					color: "orange",
-					fontSize: "22px",
-					position: "absolute",
-					right: "39%",
+					top: "0%",
+					width: "100%",
+
+					left: "50%",
+					transform: "translate(-50%)",
+					opacity: "0",
 				}}>
-				<p style={Pstyle}>
-					You have business dream and be- <br /> lieve in yourself.
-				</p>
-				<p style={Pstyle}>
-					You send request here (or on the <br /> desired service’s page)
-				</p>
-				<div>
-					<pre style={Pstyle}>
-						We send you an email giving more
-						<br />
-						information/scheduling a free
-						<br />
-						online meeting.
-					</pre>
-					<Image
-						src={colLines}
-						style={{
-							width: "550px",
-							position: "absolute",
-							left: "-590px",
-							top: "25%",
-						}}
-					/>
+				<div
+					style={{
+						width: "100%",
+						textAlign: "center",
+						fontSize: "30px",
+						marginTop: "10%",
+					}}>
+					<h1 style={{ fontSize: "50px" }}>How It Works?</h1>
+					<p>(The Process)</p>
 				</div>
-				<p style={Pstyle}>We get to know each other more</p>
-				<div>
-					<pre style={Pstyle}>
-						Your need(s) are discovered and
-						<br />
-						evaluated during and after the
-						<br />
-						meeting
-					</pre>
-					<p style={Pstyle}>You receive a tailored proposal</p>
+				<Image
+					src={starLine}
+					style={{
+						width: "80px",
+						position: "absolute",
+						left: "70%",
+						marginTop: "-12%",
+					}}
+				/>
+				<div
+					style={{
+						color: "orange",
+						fontSize: "22px",
+						position: "absolute",
+						right: "39%",
+					}}>
 					<p style={Pstyle}>
-						You have business dream and be- <br />
-						lieve in yourself.
+						You have business dream and be- <br /> lieve in yourself.
 					</p>
 					<p style={Pstyle}>
-						We may work in many forms and
-						<br />
-						turn to friends in many forms
+						You send request here (or on the <br /> desired service’s
+						page)
 					</p>
-					<Image
-						src={line}
-						style={{
-							width: "400px",
-							position: "absolute",
-							right: "-590px",
-							top: "55%",
-						}}
-					/>
-				</div>
-				<div>
-					<p style={Pstyle}>
-						We both step into becoming the
-						<br />
-						best version of ourselves in busi-
-						<br />
-						ness and the life as well
-					</p>
-					<Image
-						src={rowLines}
-						style={{
-							width: "45px",
-							position: "absolute",
-							left: "44%",
-							marginTop: "40px",
-							paddingBottom: "20px",
-						}}
-					/>
+					<div>
+						<pre style={Pstyle}>
+							We send you an email giving more
+							<br />
+							information/scheduling a free
+							<br />
+							online meeting.
+						</pre>
+						<Image
+							src={colLines}
+							style={{
+								width: "550px",
+								position: "absolute",
+								left: "-590px",
+								top: "25%",
+							}}
+						/>
+					</div>
+					<p style={Pstyle}>We get to know each other more</p>
+					<div>
+						<pre style={Pstyle}>
+							Your need(s) are discovered and
+							<br />
+							evaluated during and after the
+							<br />
+							meeting
+						</pre>
+						<p style={Pstyle}>You receive a tailored proposal</p>
+						<p style={Pstyle}>
+							You have business dream and be- <br />
+							lieve in yourself.
+						</p>
+						<p style={Pstyle}>
+							We may work in many forms and
+							<br />
+							turn to friends in many forms
+						</p>
+						<Image
+							src={line}
+							style={{
+								width: "400px",
+								position: "absolute",
+								right: "-590px",
+								top: "55%",
+							}}
+						/>
+					</div>
+					<div>
+						<p style={Pstyle}>
+							We both step into becoming the
+							<br />
+							best version of ourselves in busi-
+							<br />
+							ness and the life as well
+						</p>
+						<Image
+							src={rowLines}
+							style={{
+								width: "45px",
+								position: "absolute",
+								left: "44%",
+								marginTop: "40px",
+								paddingBottom: "20px",
+							}}
+						/>
+					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
 
