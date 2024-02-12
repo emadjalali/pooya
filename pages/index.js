@@ -69,7 +69,7 @@ export default function Home() {
 				}
 				.firstsectionSubHead {
 				}
-				@media screen and (min-width: 769px) {
+				@media screen and (min-width: 768px) {
 					.firstsection {
 						flex-direction: row;
 						align-items: center;
@@ -77,13 +77,6 @@ export default function Home() {
 					.firstsectionHead {
 					}
 					.firstsectionSubHead {
-					}
-
-					.secondsection {
-						filter: grayscale(100%);
-					}
-					.secondsection:hover {
-						filter: unset;
 					}
 				}
 			`}</style>

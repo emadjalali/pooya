@@ -78,6 +78,7 @@ html,
 body {
   scroll-behavior: smooth;
   height: 100%;
+  width: 100vw;
   max-width: 100vw;
   overflow: visible !important;
   overflow-x: hidden;
@@ -296,6 +297,34 @@ a {
   }
   .page1-mid-text {
     display: block;
+  }
+
+  .why {
+    filter: grayscale(100%);
+  }
+  .why:hover {
+    filter: unset;
+  }
+
+  .who {
+    filter: grayscale(100%);
+  }
+  .who:hover {
+    filter: unset;
+  }
+
+  .how {
+    filter: grayscale(100%);
+  }
+  .how:hover {
+    filter: unset;
+  }
+
+  .liveit {
+    filter: grayscale(100%);
+  }
+  .liveit:hover {
+    filter: unset;
   }
 }
 @media only screen and (min-width: 992px) {

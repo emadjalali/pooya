@@ -1,7 +1,7 @@
 "use client";
 
 import Nav from "./Navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 
@@ -11,6 +11,21 @@ function Btn() {
 	const clickHandler = () => {
 		setBtnNav((prove) => !prove);
 	};
+	useEffect(() => {
+		if (btnNav) {
+			// When the modal is shown, we want a fixed body
+			document.body.style.position = "fixed";
+			console.log("document.body.style", document.body.style);
+			document.body.style.top = `-${window.scrollY}px`;
+		} else {
+			console.log("document.body.style", document.body.style);
+			// When the modal is hidden...
+			const scrollY = document.body.style.top;
+			document.body.style.position = "";
+			document.body.style.top = "";
+			window.scrollTo(0, parseInt(scrollY || "0") * -1);
+		}
+	}, [btnNav]);
 
 	return (
 		<div>

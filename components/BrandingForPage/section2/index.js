@@ -52,6 +52,7 @@ const SectionTwo = () => {
 				/>
 				<Image
 					src={why}
+					className='why'
 					style={{
 						width: "24%",
 						position: "absolute",
@@ -70,6 +71,7 @@ const SectionTwo = () => {
 				/>
 				<Image
 					src={who}
+					className='who'
 					style={{
 						width: "25.6%",
 						position: "absolute",
@@ -97,6 +99,7 @@ const SectionTwo = () => {
 				/>
 				<Image
 					src={how}
+					className='how'
 					style={{
 						width: "25.6%",
 						position: "absolute",
@@ -124,6 +127,7 @@ const SectionTwo = () => {
 				/>
 				<Image
 					src={live}
+					className='liveit'
 					style={{
 						width: "28%",
 						position: "absolute",
