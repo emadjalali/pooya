@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Nav = () => {
 	const [expand, setExpand] = useState(false);
-
 	return (
 		<nav className='bg-[#0e0a0a] h-[6.45vh] w-full absolute left-0 top-[13vh]'>
 			<ul className='nav px-0'>
@@ -89,13 +88,10 @@ const Nav = () => {
 				.nav {
 					display: flex;
 					flex-direction: column;
-
 					text-align: left;
 					font-size: 26px;
 					background-color: #0e0a0a;
 					height: 100vh;
-					width: 100vw;
-					overflow-y: hidden;
 				}
 
 				.navitem {
