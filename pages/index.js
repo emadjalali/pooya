@@ -1,3 +1,4 @@
+import SectionOne from "@/components/BrandingForPage/section1";
 import SectionTwo from "@/components/BrandingForPage/section2";
 import SectionThree from "@/components/BrandingForPage/section3";
 import SectionFour from "@/components/BrandingForPage/section4";
@@ -9,8 +10,14 @@ import pattern from "@/public/BrandingForPattern/section4/Untitled-2-24.svg";
 export default function Home() {
 	return (
 		<div>
-			<section className=' bg-[#0e0a0a] flex justify-around'>
-				<div className=' firstsection flex  h-[87vh]'>
+			<section
+				// className=' bg-[#0e0a0a] flex justify-around'
+				style={{
+					position: "relative",
+					width: "100%",
+					margin: "auto",
+				}}>
+				{/* <div className=' firstsection flex  h-[87vh]'>
 					<div className='firstsectionHeader text-white pe-4 text-5xl sm:text-6xl md:px-0 md:text-5xl lg:text-7xl'>
 						<p>Integrated</p>
 						<p>Visual</p>
@@ -21,7 +28,8 @@ export default function Home() {
 							in Architecture and<br></br>Constraction Industry
 						</p>
 					</div>
-				</div>
+				</div> */}
+				<SectionOne />
 			</section>
 			<section
 				className=' secondsection'

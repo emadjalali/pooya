@@ -5,7 +5,7 @@ import FeelingText from "./headerItem/feelingText.svg";
 
 const Header = () => {
 	return (
-		<header className='bg-[#0e0a0a] relative'>
+		<header className='bg-[#0e0a0a] relative z-10'>
 			<div className='text-xl text-white h-[13vh] flex justify-between items-center px-10'>
 				<div
 					style={{

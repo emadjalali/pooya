@@ -4,7 +4,7 @@ import { useState } from "react";
 const Nav = () => {
 	const [expand, setExpand] = useState(false);
 	return (
-		<nav className='bg-[#0e0a0a] h-[6.45vh] w-full absolute left-0 top-[13vh]'>
+		<nav className='bg-[#0e0a0a]  w-full absolute left-0 top-[13vh] z-10'>
 			<ul className='nav px-0'>
 				<li
 					onClick={() => setExpand((prev) => !prev)}
@@ -107,7 +107,7 @@ const Nav = () => {
 				.brandfor {
 					position: relative;
 					transition: opacity 0.2s ease-in-out, visibility 0.2s;
-					background-color: black;
+					background-color: #0e0a0a;
 					color: white;
 				}
 				@media screen and (max-width: 767px) {
@@ -147,7 +147,7 @@ const Nav = () => {
 						width: 200%;
 						top: 100%;
 						background-color: white;
-						color: black;
+						color: #0e0a0a;
 						padding-top: 10px;
 						padding-bottom: 10px;
 					}
