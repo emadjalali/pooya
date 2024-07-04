@@ -29,7 +29,7 @@ export default function Home() {
 						</p>
 					</div>
 				</div> */}
-				{/* <SectionOne /> */}
+				<SectionOne />
 			</section>
 			<section
 				className=' secondsection'
