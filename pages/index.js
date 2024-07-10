@@ -59,6 +59,7 @@ export default function Home() {
 				{/* <Image src={pattern} /> */}
 				<SectionFour />
 			</section>
+			<h1>hello</h1>
 			<section
 				// className='h-[200vh]'
 				style={{
