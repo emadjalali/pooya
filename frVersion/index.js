@@ -1,7 +1,7 @@
 export default function frHome(){
     return(
         <>
-            hello
+            <h1>hello</h1>
         </>
     )
 }
