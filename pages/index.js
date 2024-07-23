@@ -3,7 +3,7 @@ import SectionTwo from "@/components/BrandingForPage/section2";
 import SectionThree from "@/components/BrandingForPage/section3";
 import SectionFour from "@/components/BrandingForPage/section4";
 import HowItWorks from "@/components/BrandingForPage/section5";
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import NestedLayout from '../components/nested-layout-en'
 import Image from "next/image";
 

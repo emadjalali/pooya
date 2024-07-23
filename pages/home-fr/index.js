@@ -3,7 +3,7 @@ import SectionOne from "../../components/خدمات برندینگ در صنعت
 import SectionTwo from "../../components/خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی/section2";
 import SectionThree from "../../components/خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی/section3";
 import SectionFour from "../../components/خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی/section4";
-import Layout from '../../components/layout'
+import Layout from '../../components/Layout'
 import NestedLayout from '../../components/nested-layout-fr'
 
 export default function HomeFr() {
