@@ -2,11 +2,7 @@ import Header from "./headerC";
 import Footer from "./footerC";
 const Layout = ({ children }) => {
 	return (
-		<main style={{ overflow: "hidden" }}>
-			<Header />
-			{children}
-			<Footer />
-		</main>
+		<>{ children }</>
 	);
 };
 

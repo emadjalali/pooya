@@ -2,30 +2,30 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Nav = () => {
-	const [expand, setExpand] = useState(false);
+	// const [expand, setExpand] = useState(false);
 	return (
-		<nav className='bg-[#0e0a0a]  w-full absolute left-0 top-[13vh] z-10'>
+		<nav className='bg-[#0e0a0a]  w-full absolute left-0 top-[13vh] z-10' style={{direction: "rtl"}}>
 			<ul className='nav px-0'>
 				<li
-					onClick={() => setExpand((prev) => !prev)}
+					// onClick={() => setExpand((prev) => !prev)}
 					className='navitem md:hover:bg-orange-600'
 					style={{ position: "relative" }}>
 					<div>خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</div>
-					<div className='brandfor '>
-						<ul className={` px-0 ${expand ? "showbrand" : "hidebrand"}`}>
-							<li className='hover:text-orange-600  branditem'>
+					<div className='brandfor font-semibold'>
+						<ul style={{marginRight:"10px"}}>
+							<li className='hover:text-orange-600  branditem '>
 							برندینگ برای معماران
 							</li>
-							<li className='hover:text-orange-600  branditem  longitem'>
+							<li className='hover:text-orange-600  branditem  '>
 							برندینگ برای سازندگان
 							</li>
-							<li className='hover:text-orange-600  branditem  longitem'>
+							<li className='hover:text-orange-600  branditem  '>
 							برندینگ برای تامین‌کنندگان
 							</li>
-							<li className='hover:text-orange-600  branditem  longitem'>
+							<li className='hover:text-orange-600  branditem  '>
 							رندینگ ساختمان
 							</li>
-							<li className='hover:text-orange-600  branditem  longitem'>
+							<li className='hover:text-orange-600  branditem  '>
 							برندینگ شهری
 							</li>
 						</ul>
@@ -37,7 +37,7 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"/SpaceBranding"}>
+						href={"#"}>
 						{" "}
 						برندینگ فضا
 					</Link>
@@ -48,7 +48,7 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"/CreativeSolutions"}>
+						href={"#"}>
 						مشاوره
 					</Link>
 				</li>
@@ -58,7 +58,7 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"/Consultancy"}>
+						href={"#"}>
 						dycaba
 					</Link>
 				</li>
@@ -68,30 +68,10 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"/Philosophy"}>
+						href={"#"}>
 						درباره حس یک نگاه 
 					</Link>
 				</li>
-				{/* <li className='hover:bg-orange-600  navitem'>
-					<Link
-						style={{
-							textDecoration: "none",
-							color: "white",
-						}}
-						href={"/FOAL"}>
-						FEELING OF A LOOK?
-					</Link>
-				</li>
-				<li className='hover:bg-orange-600 navitem'>
-					<Link
-						style={{
-							textDecoration: "none",
-							color: "white",
-						}}
-						href={"/Contact"}>
-						Contact
-					</Link>
-				</li> */}
 			</ul>
 			<style jsx>{`
 				.nav {
@@ -141,8 +121,11 @@ const Nav = () => {
 						display: flex;
 						flex-direction: row;
 						text-align: center;
-						font-size: 14px;
+						font-size: 16px;
 						height: inherit;
+					}
+					Link{
+						font-size: 14px;
 					}
 					.navitem {
 						padding-left: 0px;
@@ -153,12 +136,14 @@ const Nav = () => {
 						display: inherit;
 						opacity: 0;
 						visibility: hidden;
-						width: 200%;
+						width: 350%;
 						top: 100%;
 						background-color: white;
 						color: #0e0a0a;
 						padding-top: 10px;
 						padding-bottom: 10px;
+						padding-right: 10px;
+						text-align: right;
 					}
 					.navitem:hover .brandfor {
 						opacity: 1;

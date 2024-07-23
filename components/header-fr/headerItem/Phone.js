@@ -11,7 +11,7 @@ function Phone() {
 
 	return (
 		<div
-			className='flex w-52'
+			className='flex'
 			style={{
 				position: "absolute",
 				// left: "30px",
@@ -41,6 +41,7 @@ function Phone() {
 						top: "-5px",
 						letterSpacing: "0px",
 						wordSpacing: "-1px",
+						width: "100px",
 						// position: "absolute",
 						// left: "5%",
 						// top: "30px",

@@ -3,6 +3,8 @@ import SectionTwo from "@/components/BrandingForPage/section2";
 import SectionThree from "@/components/BrandingForPage/section3";
 import SectionFour from "@/components/BrandingForPage/section4";
 import HowItWorks from "@/components/BrandingForPage/section5";
+import Layout from '../components/layout'
+import NestedLayout from '../components/nested-layout-en'
 import Image from "next/image";
 
 import pattern from "@/public/BrandingForPattern/section4/Untitled-2-24.svg";
@@ -59,7 +61,6 @@ export default function Home() {
 				{/* <Image src={pattern} /> */}
 				<SectionFour />
 			</section>
-			<h1>hello</h1>
 			<section
 				// className='h-[200vh]'
 				style={{
@@ -69,6 +70,9 @@ export default function Home() {
 				}}>
 				<HowItWorks className='bg-[#fffff]' />
 			</section>
+			<button >
+
+			</button>
 			<style jsx>{`
 				.firstsection {
 					flex-direction: column;
@@ -92,3 +96,11 @@ export default function Home() {
 		</div>
 	);
 }
+
+Home.getLayout = function getLayout(page) {
+	return (
+	  <Layout>
+		<NestedLayout>{page}</NestedLayout>
+	  </Layout>
+	)
+  }
