@@ -10,6 +10,7 @@ export default function HomeFr() {
 	return (
 		<div>
 			<section
+				id="sectionOne"
 				// className=' bg-[#0e0a0a] flex justify-around'
 				style={{
 
@@ -20,14 +21,15 @@ export default function HomeFr() {
 				<SectionOne />
 			</section>
 			<section
-				className=' secondsection'
-				style={{
-					paddingTop:"5%",
-					paddingBottom:"5%",
-					position: "relative",
-					width: "100%",
-					margin: "auto",
-				}}>
+				className=' secondSection'
+				// style={{
+				// 	paddingTop:"125%",
+				// 	paddingBottom:"5%",
+				// 	position: "relative",
+				// 	width: "100%",
+				// 	margin: "auto",
+				// }}
+				>
 				<SectionTwo />
 			</section>
 			<section
@@ -49,6 +51,9 @@ export default function HomeFr() {
 				}}>
 				<SectionFour />
 			</section>
+			<div className="backToUp">
+				<a style={{color:"#f89b61" , textDecoration:"none" , fontWeight:"900" , fontSize:"18px" }} href="#sectionOne">رفتن به بالا</a>
+			</div>
 			<style jsx>{`
 				.firstsection {
 					flex-direction: column;
@@ -58,6 +63,18 @@ export default function HomeFr() {
 				}
 				.firstsectionSubHead {
 				}
+				.secondSection{
+					display: ruby-text;
+					padding-top:125%;
+					padding-bottom:5%;
+					position: relative;
+					width: 100%;
+					margin: auto;
+				}
+				.backToUp{
+					margin: 35px 0px 35px 0px;
+    				text-align: center;
+				}
 				@media screen and (min-width: 768px) {
 					.firstsection {
 						flex-direction: row;
@@ -66,6 +83,10 @@ export default function HomeFr() {
 					.firstsectionHead {
 					}
 					.firstsectionSubHead {
+					}
+					.secondSection{
+						padding-top:5%;
+						display: block;
 					}
 				}
 			`}</style>

@@ -24,7 +24,7 @@ const SectionTwo = () => {
 				</div>
 				<div className="patternTwo">
 					<Image src={pattern2} style={{rotate:"180deg"}}/>
-					<Link className="a" href="#"  tyle={{color:"#f58641"}}>سند اختصاصی راهنمای جامع برند</Link>
+					<Link className="a" href="#"  style={{color:"#f58641"}}>سند اختصاصی راهنمای جامع برند</Link>
 				</div>
 				<div className="patternFour" >
 					<Image src={pattern4}/>

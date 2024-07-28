@@ -1,35 +1,18 @@
 import Link from "next/link";
+import BtnTwo from "./Btn2"
 import { useState } from "react";
 
 const Nav = () => {
 	// const [expand, setExpand] = useState(false);
 	return (
-		<nav className='bg-[#0e0a0a]  w-full absolute left-0 top-[13vh] z-10' style={{direction: "rtl"}}>
+		<nav className='bg-[#0e0a0a]  w-full absolute left-0 top-[13vh] z-10' style={{direction: ""}}>
 			<ul className='nav px-0'>
 				<li
 					// onClick={() => setExpand((prev) => !prev)}
-					className='navitem md:hover:bg-orange-600'
-					style={{ position: "relative" }}>
-					<div>خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</div>
-					<div className='brandfor font-semibold'>
-						<ul style={{marginRight:"10px"}}>
-							<li className='hover:text-orange-600  branditem '>
-							برندینگ برای معماران
-							</li>
-							<li className='hover:text-orange-600  branditem  '>
-							برندینگ برای سازندگان
-							</li>
-							<li className='hover:text-orange-600  branditem  '>
-							برندینگ برای تامین‌کنندگان
-							</li>
-							<li className='hover:text-orange-600  branditem  '>
-							رندینگ ساختمان
-							</li>
-							<li className='hover:text-orange-600  branditem  '>
-							برندینگ شهری
-							</li>
-						</ul>
-					</div>
+					className='navitem'
+					style={{ position: "relative" , direction: "ltr"}}>
+					<div className="firstNI">خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</div>
+					<div className="btn2"><BtnTwo/></div>
 				</li>
 				<li className='hover:bg-orange-600  navitem'>
 					<Link
@@ -74,6 +57,14 @@ const Nav = () => {
 				</li>
 			</ul>
 			<style jsx>{`
+				.btn2{
+					position: absolute;
+					top:30px;
+				}
+				.firstNI{
+					font-size:20px;
+					margin-left:35px;
+				}
 				.nav {
 					display: flex;
 					flex-direction: column;
@@ -93,12 +84,7 @@ const Nav = () => {
 					padding-top: 20px;
 					padding-bottom: 20px;
 				}
-				.brandfor {
-					position: relative;
-					transition: opacity 0.2s ease-in-out, visibility 0.2s;
-					background-color: #0e0a0a;
-					color: white;
-				}
+
 				@media screen and (max-width: 767px) {
 					.showbrand {
 						height: 200px;
@@ -117,12 +103,16 @@ const Nav = () => {
 				}
 
 				@media screen and (min-width: 768px) {
+				.firstNI{
+					margin-left:-20px;
+				}
 					.nav {
 						display: flex;
 						flex-direction: row;
 						text-align: center;
 						font-size: 16px;
 						height: inherit;
+						direction: rtl;
 					}
 					Link{
 						font-size: 14px;
@@ -131,20 +121,7 @@ const Nav = () => {
 						padding-left: 0px;
 						flex-grow: 1;
 					}
-					.brandfor {
-						position: absolute;
-						display: inherit;
-						opacity: 0;
-						visibility: hidden;
-						width: 350%;
-						top: 100%;
-						background-color: white;
-						color: #0e0a0a;
-						padding-top: 10px;
-						padding-bottom: 10px;
-						padding-right: 10px;
-						text-align: right;
-					}
+
 					.navitem:hover .brandfor {
 						opacity: 1;
 						visibility: visible;

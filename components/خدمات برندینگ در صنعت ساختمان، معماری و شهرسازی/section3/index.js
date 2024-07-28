@@ -16,17 +16,8 @@ import زندگی from "./blackPattern3/home-24.svg"
 export default function SectionThree() {
 	return (
 		<div>
-			<div className='pageSize'></div>
-			<div
-					className='mycontainer'
-					style={{
-						position: "absolute",
-						top: "-2%",
-						// width: "75%",
-						margin: "auto",
-						left: "50%",
-						transform: "translate(-50%)",
-					}}>
+			<div className='pageSize'>
+				<div className='mycontainer' style={{position: "absolute", top: "-3%", margin: "auto", left: "50%", transform: "translate(-50%)",}}>
 				<div><h1 className='bigQ'>حس یک نگاه مشخصا به چه می پردازد؟</h1></div>
 				<div className="lineOne">
 					<Image src={lineOne} style={{height:"25px"}}/>
@@ -44,7 +35,7 @@ export default function SectionThree() {
 					<Image src={به_کشف_چرایی}/>
 				</div>
 				<div className="lineOne">
-					<Image src={colorLineOne}style={{height:"25px"}}/>
+					<Image src={colorLineOne} style={{height:"25px", marginTop:"5%"}}/>
 				</div>
 				<div className="boldText">
 					<Link href={"#"}><Image src={خلق}  style={{height:"220%"}}/></Link>
@@ -52,10 +43,10 @@ export default function SectionThree() {
 				<div className="secondp">
 					<Image src={به_چیستی}/>
 				</div>
-				<div className="thirthp">
+				<div className="thirthpp">
 					<Image src={هویت_برند}/>
 				</div>
-				<div className="lineTwo">
+				<div className="lineTwo" style={{marginTop:"10%"}}>
 					<Image src={lineTwo}/>
 				</div>
 				<div className="boldText">
@@ -68,7 +59,7 @@ export default function SectionThree() {
 					<Image src={بازاریابی}/>
 				</div>
 				<div className="lineOne">
-					<Image src={colorLineOne} style={{height:"25px"}}/>
+					<Image src={colorLineOne} style={{height:"25px",marginTop:"10%"}}/>
 				</div>
 				<div className="boldText">
 					<Link href={"#"}><Image src={اجرا}  style={{height:"220%"}}/></Link>
@@ -77,13 +68,15 @@ export default function SectionThree() {
 					<Image src={زندگی}/>
 				</div>
 			</div>
+			</div>	
+		<div/>
 			<style jsx>{`
 				.pageSize {
 					position: relative;
 					width: 100%;
-					padding-top: 110%;
+					padding-top: 250%;
 					margin: auto;
-					background-color: rgb(241 245 249);
+					background-color: #edebeb;
 				}
 				.mycontainer {
 					width: 150%;
@@ -94,7 +87,7 @@ export default function SectionThree() {
 					position: relative;
 					margin: 0 auto;
 					font-size: 20px;
-					margin-top: 12%;
+					margin-top: 20%;
 					text-align: center;
 				}
 				.lineOne{
@@ -108,43 +101,47 @@ export default function SectionThree() {
 				}
 				.lineTwo{
 					display: ruby-text;
-    				margin-top: 5%
+    				margin-top: 2%
 				}
 				.boldText{
-					display: ruby-text;
-    				margin-top: 3%;
+					width: 18%;
+    				margin-right: 42%;
+    				margin-top:0%;
 				}
 				.firstp{
-					position: absolute;
-    				right: 21%;
-   					 top: 27%;
+					width: 15%;
+    				margin-right: 23%;
+    				margin-top: -20%;
 				}
 				.secondp{
-					position:absolute;
-					right: 21%;
-					top: 45%;
+	    			width: 14%;
+   					margin-right: 23%;
+   					margin-top: -19%;
 				}
-				.thirthp{
-					position:absolute;
-					left:21%;
-					top:48%;
+				.thirthpp{
+    				width: 20%;
+   					margin-right: 62%;
+    				margin-top: -14%;
 				}
 				.fourth{
-					position:absolute;
-					right:21%;
-					top: 65%;
+	    			width: 14%;
+   					margin-right: 23%;
+   					margin-top: -19%;
 				}
 				.fifth{
-					position:absolute;
-					left:21%;
-					top: 68%;
+    				width: 20%;
+   					margin-right: 62%;
+    				margin-top: -12%;
 				}
 				.sixth{
-					position:absolute;
-					right:21%;
-					top: 86%;
+	    			width: 14%;
+   					margin-right: 23%;
+   					margin-top: -19%;
 				}
 				@media screen and (min-width: 768px) {
+					.pageSize {
+						padding-top: 120%;
+					}
 					.mycontainer {
 						width: 75%;
 					}
