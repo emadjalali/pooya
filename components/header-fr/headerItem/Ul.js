@@ -27,18 +27,10 @@ export default function Ul(){
 				}
                 @media screen and (min-width: 768px) {
                     .brandfor {
-						position: absolute;
-						display: inherit;
-						opacity: 0;
-						visibility: hidden;
-						width: 350%;
-						top: 100%;
 						background-color: white;
 						color: #0e0a0a;
-						padding-top: 10px;
-						padding-bottom: 10px;
-						padding-right: 10px;
 						text-align: right;
+						margin-top:20px;
 					}
                 }
             `}</style>

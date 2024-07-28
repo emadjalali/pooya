@@ -10,7 +10,7 @@ const Header = () => {
 	return (
 		<header className='bg-[#0e0a0a] relative z-10'>
 			<div className='text-xl text-white h-[13vh] flex justify-between items-center px-10'>
-				<Btn />
+				<Btn/>
 				<div
 					className='[@media(max-width:767px)]:w-[30%] absolute '
 					style={{ left: "50%", transform: "translate(-50%)" }}

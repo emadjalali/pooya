@@ -8,7 +8,7 @@ import NestedLayout from '../../components/nested-layout-fr'
 
 export default function HomeFr() {
 	return (
-		<div>
+		<div style={{fontFamily:"iranYekanRegularNum"}}>
 			<section
 				id="sectionOne"
 				// className=' bg-[#0e0a0a] flex justify-around'
@@ -52,7 +52,7 @@ export default function HomeFr() {
 				<SectionFour />
 			</section>
 			<div className="backToUp">
-				<a style={{color:"#f89b61" , textDecoration:"none" , fontWeight:"900" , fontSize:"18px" }} href="#sectionOne">رفتن به بالا</a>
+				<a style={{color:"#f89b61" , textDecoration:"none" , fontWeight:"900" , fontSize:"18px" , fontFamily:"fantasy"}} href="#sectionOne">رفتن به بالا</a>
 			</div>
 			<style jsx>{`
 				.firstsection {
@@ -88,6 +88,7 @@ export default function HomeFr() {
 						padding-top:5%;
 						display: block;
 					}
+					.backToUp{display:none;}
 				}
 			`}</style>
 		</div>

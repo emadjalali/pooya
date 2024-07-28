@@ -42,6 +42,8 @@ function Phone() {
 						letterSpacing: "0px",
 						wordSpacing: "-1px",
 						width: "100px",
+						fontFamily:"iranYekanRegularNum",
+						direction:"ltr"
 						// position: "absolute",
 						// left: "5%",
 						// top: "30px",

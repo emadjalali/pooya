@@ -9,7 +9,7 @@ export default function Footer() {
   };
 
   return (
-    <div>
+    <div style={{fontFamily:"iranYekanRegularNum"}}>
       <div className="container footer-main">
         <div className="row">
           <div className="col-12 col-sm-12 col-md-4 text-end col-lg-4 mb-5 mb-sm-5 mb-md-0 mb-lg-5 footer-intro-text">

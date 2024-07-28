@@ -4,6 +4,16 @@
 @tailwind utilities;
 /*---START---IRAN YEKYAN WEB FARSI NUMBER---*/
 @font-face {
+  font-family: "sroya";
+  src: url("/public/font/SROYA_0.TTF");
+}
+
+@font-face{
+  font-family: "BRoya";
+  src: url("/public/font/BRoyaBd_0.ttf");
+}
+
+@font-face {
   font-family: "iranYekanLightNum";
   font-style: normal;
   font-weight: 300;

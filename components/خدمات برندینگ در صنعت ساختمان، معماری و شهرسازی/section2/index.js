@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import pattern1 from "./colorPattern2/home-35.svg"
+import pattern8 from "./colorPattern2/home-34.svg"
 import pattern2 from "./colorPattern2/home-36.svg"
 import pattern3 from "./colorPattern2/home-37.svg"
 import pattern4 from "./colorPattern2/home-38.svg"
@@ -20,11 +21,11 @@ const SectionTwo = () => {
 				</div>
 				<div className="patternOne">
 					<Image src={pattern1}/>
-					<Link className="a" href="#" style={{color:"#868686", }}>تولید محتوای تخصصی و اختصاصی <br/>در صنعت و ساختمان سازی</Link>
+					<Link className="a" href="#" style={{color:"#868686"}}>تولید محتوای تخصصی و اختصاصی <br/>در صنعت و ساختمان سازی</Link>
 				</div>
-				<div className="patternTwo">
-					<Image src={pattern2} style={{rotate:"180deg"}}/>
-					<Link className="a" href="#"  style={{color:"#f58641"}}>سند اختصاصی راهنمای جامع برند</Link>
+				<div className="patternTwo"  style={{textAlignLast: "justify"}}>
+					<Image src={pattern8}/>
+					<Link className="a" href="#"  style={{color:"#f58641"}}>اجرای صفر تا صد فرآیند برندینگ</Link>
 				</div>
 				<div className="patternFour" >
 					<Image src={pattern4}/>
@@ -57,7 +58,7 @@ const SectionTwo = () => {
 				</div>
 				<div className="patternFive" >
 					<Image src={pattern5}/>
-					<div style={{fontSize:"30px",textAlignLast: "justify"}}>
+					<div style={{textAlignLast: "justify"}}>
 						<Link className="a" href="#" style={{color: "#007199"}}>راهکارهای خلاق حس یک نگاه</Link>
 					</div>
 				</div>
@@ -82,7 +83,7 @@ const SectionTwo = () => {
 				.a{
 					text-decoration: none;
 					font-weight: bold;
-					font-size: 25px;
+					font-size: 20px;
 				}
 				img{
 					margin-bottom:15px;
@@ -98,6 +99,10 @@ const SectionTwo = () => {
   						grid-template-columns: auto auto auto;
 					
   				}
+				.a{font-size:10px}
+			}
+			@media screen and (min-width: 992px) {
+				.a {font-size:15px}
 			}
 			`}</style>
 		</div>

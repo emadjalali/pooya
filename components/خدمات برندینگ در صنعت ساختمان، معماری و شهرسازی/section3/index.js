@@ -7,7 +7,7 @@ import کشف from "./colorPattern3/home-42.svg"
 import به_کشف_چرایی from "./blackPattern3/home-16.svg"
 import خلق from "./colorPattern3/home-44.svg"
 import به_چیستی from "./blackPattern3/home-19.svg"
-import هویت_برند from "./blackPattern3/home-20.svg"
+import هویت_برند from "./blackPattern3/home-17.svg"
 import مسیر from "./colorPattern3/home-46.svg"
 import به_چگونگی from "./blackPattern3/home-22.svg"
 import بازاریابی from "./blackPattern3/home-20.svg"
@@ -140,7 +140,7 @@ export default function SectionThree() {
 				}
 				@media screen and (min-width: 768px) {
 					.pageSize {
-						padding-top: 120%;
+						padding-top: 130%;
 					}
 					.mycontainer {
 						width: 75%;
