@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
+import Tel from "./footerItem/telgram.svg"
+import X from "./footerItem/x.svg"
 
 export default function Footer() {
   const handleSubmit = (e) => {
@@ -34,28 +36,30 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-12 col-md-4 text-center mb-5 mb-sm-5 mb-md-0 mb-lg-5">
-            <div className="d-flex align-items-end justify-content-center h-100">
+          <div className="col-12 col-sm-12 col-md-4 text-center">
+            <div className="h-100 logoD">
               <div>
-                <div className="logo">
+                <div className="logo boxTow">
                   <img
                     src="/assets/Untitled-2-66.svg"
                     alt="footer-logo"
-                    className="footer-logo"
+                    className="footerLogo"
                   />
                 </div>
-                <div className="icons">
+                <div className="box">
+                  <div className="icons">
                     <img
                       src="/assets/Untitled-2-73.svg"
                       width="15%"
                       alt=""
                       className="footer-social-icon"
                     />
-                    <img
-                      src="/assets/Untitled-2-74.svg"
+                    <Image
+                      src={Tel}
                       width="15%"
                       alt=""
                       className="footer-social-icon"
+                      style={{width: "22px"}}
                     />
                     <img
                       src="/assets/Untitled-2-75.svg"
@@ -63,22 +67,27 @@ export default function Footer() {
                       alt=""
                       className="footer-social-icon"
                     />
-                    <img
-                      src="/assets/Untitled-2-76.svg"
+                    <Image
+                      src={X}
                       width="15%"
                       alt=""
                       className="footer-social-icon"
+                      style={{width: "22px"}}
                     />
-                </div>
-                <div className="footer-socialAndAddMain socialAndAddMain">
-                  <div style={{fontSize:"24px"}}>021 - 22 72 40 59</div>
+                  </div>
+                  <div className="footer-socialAndAddMain socialAndAddMain">
+                  <div className="num">021 - 22 72 40 59</div>
                   <div className="">info@feelingofalook.com</div>
+                  </div>
+                  <div className="address">
+                    <p>نیاوران،خیابان مژده،<br/>کوچه قادری،پلاک2،<br/>زنگ5</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-12 col-md-4 text-center mb-3 mb-sm-5 mb-md-0 mb-lg-5">
-            <div className="d-flex align-items-end justify-content-center h-100">
+            <div className="formD boxTow">
               <div>
               <div className="textMid">
                   برای آگاهی از آخرین دستاوردها، پروژه ها، رویدادها
@@ -136,6 +145,80 @@ export default function Footer() {
           font-size: 13px;
           margin-top: 30px;
           color: gray;
+        }
+        .num{
+            direction: ltr;
+            font-size:24px;
+        }
+        .formD{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .logoD{
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+
+        }
+        .footerLogo{
+          width: 30%;
+        }
+        .address{
+          display: none;
+        }
+        @media screen and (min-width: 768px) {
+          .myContainer{
+            display: flex;
+            flex-wrap: wrap;
+            color: #036e96;
+          }
+          .pLeft{
+              direction: ltr;
+              font-size: 11px;
+              margin-top: 15px;
+              
+          }
+          .box{
+              position: absolute;
+              left: 10%;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column-reverse;
+          }
+          .socialAndAddMain{
+            font-size: 12px;
+            text-align-last: justify;
+            color: #f48120;
+            margin-top: 0px;
+          }
+          .num{
+            direction: ltr;
+            font-size: 10px;
+          }
+          .formD{
+            position: absolute;
+            left: 38%;
+            align-items: flex-start;
+            margin-top:10%;
+          }
+          .logo{
+            text-align: end;
+          }
+          .logoD{
+            align-items: flex-start;
+          }
+          .footerLogo{
+            width: 40%;
+          }
+          .footer-social-icon{
+             width: 55%;
+          }
+          .address{
+            color: #f48120;
+            font-size: 14px;
+            display: block;
+          }
         }
       `}</style>
     </div>
