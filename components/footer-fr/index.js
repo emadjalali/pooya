@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import Tel from "./footerItem/telgram.svg"
 import X from "./footerItem/x.svg"
+import In from "./footerItem/in.svg"
+import Insta from "./footerItem/insta.svg"
 
 export default function Footer() {
   const handleSubmit = (e) => {
@@ -11,19 +13,17 @@ export default function Footer() {
   };
 
   return (
-    <div style={{fontFamily:"iranYekanRegularNum"}}>
-      <div className="container footer-main">
-        <div className="row">
-          <div className="col-12 col-sm-12 col-md-4 text-end col-lg-4 mb-5 mb-sm-5 mb-md-0 mb-lg-5 footer-intro-text">
-            <div className="d-flex align-items-end justify-content-center h-100">
-              <div>
-                <div className="myContainer">
-                  <div className="pRight">
+    <div className="main" style={{fontFamily:"iranYekanRegularNum" }}>
+      <div className="">
+        <div className="Container">
+          <div className="partOne">
+            <div className="myContainer">
+              <div className="pRight">
                     <div>مقالات کاربردی</div>
                     <div>اخبار</div>
                     <div>آموزش های تخصصی</div>
-                  </div>
-                  <div className="pLeft">
+              </div>
+              <div className="pLeft">
                     <div>برند بوک در صنعت ساختمان</div>
                     <div>طراحی هویت یکپارچه برند</div>
                     <div>دیجیتال مارکتینگ، طراحی وبسایت و مدیریت فضای مجازی</div>
@@ -31,69 +31,63 @@ export default function Footer() {
                     <div>طراحی و پیاده سازی کمپین های تبلیغاتی</div>
                     <div>برندینگ بین المللی ویژه ی فعالان صنعت ساختمان و معماری
                     </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-12 col-md-4 text-center">
-            <div className="h-100 logoD">
-              <div>
-                <div className="logo boxTow">
+          <div>
+            <div className="logo">
                   <img
                     src="/assets/Untitled-2-66.svg"
                     alt="footer-logo"
                     className="footerLogo"
                   />
-                </div>
-                <div className="box">
+            </div>
+            <div className="box">
                   <div className="icons">
-                    <img
-                      src="/assets/Untitled-2-73.svg"
+                    <a href="#"><Image
+                      src={Insta}
                       width="15%"
                       alt=""
                       className="footer-social-icon"
-                    />
-                    <Image
+                      style={{width: "22px"}}
+                    /></a>
+                    <a href="#"><Image
                       src={Tel}
                       width="15%"
                       alt=""
                       className="footer-social-icon"
                       style={{width: "22px"}}
-                    />
-                    <img
-                      src="/assets/Untitled-2-75.svg"
+                    /></a>
+                    <a href="#"><Image
+                      src={In}
                       width="15%"
                       alt=""
                       className="footer-social-icon"
-                    />
-                    <Image
+                      style={{width: "22px"}}
+                    /></a>
+                    <a href="#"><Image
                       src={X}
                       width="15%"
                       alt=""
                       className="footer-social-icon"
                       style={{width: "22px"}}
-                    />
+                    /></a>
                   </div>
-                  <div className="footer-socialAndAddMain socialAndAddMain">
+                  <div className="socialAndAddMain">
                   <div className="num">021 - 22 72 40 59</div>
                   <div className="">info@feelingofalook.com</div>
                   </div>
                   <div className="address">
                     <p>نیاوران،خیابان مژده،<br/>کوچه قادری،پلاک2،<br/>زنگ5</p>
                   </div>
-                </div>
-              </div>
             </div>
           </div>
-          <div className="col-12 col-sm-12 col-md-4 text-center mb-3 mb-sm-5 mb-md-0 mb-lg-5">
-            <div className="formD boxTow">
-              <div>
-              <div className="textMid">
+          <div className="partThree">
+            <div className="textMid">
                   برای آگاهی از آخرین دستاوردها، پروژه ها، رویدادها
                   <br />و پیشنهادات، عضو خبرنامه حس یک نگاه شوید.
-                </div>
-                <div>
+            </div>
+            <div className="formD">
                   <form className="mt-2" onSubmit={handleSubmit}>
                     <input
                       id="email"
@@ -104,47 +98,61 @@ export default function Footer() {
                     />
                     <button className="footer-submit-button">ارسال</button>
                   </form>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div><style>{`
+      .main{
+        height:100%;
+      }
+        .Container{
+              display: flex;
+              justify-content: center;
+              padding: 0px 20px 0px 20px;
+              flex-wrap: wrap;
+              flex-direction: column;;
+        }
         .myContainer {
  					display: flex;
           flex-direction: row;
-          // align-items: center;
           flex-wrap: nowrap;
           color:gray;
+          justify-content: center;
 				}
         .pRight{
-          font-size: 15px;
+          font-size: 12px;
           // padding-top:50px;
         }
         .pLeft{
           text-align: end;
           margin-right: 2px;
-          font-size: 15px;
+          font-size: 12px;
         }
-        .logo{display: ruby-text;}
+        .logo{
+          display: ruby-text;
+          margin-top:20px;
+        }
         .icons{
           display: flex;
           flex-wrap: nowrap;
           justify-content: center;
           flex-direction: row-reverse;
-          margin-top: 20px;
+          margin-top: 5px;
         }
         .socialAndAddMain{
           color:gray;
           margin-top:20px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: center;
         }
         .textMid{
-          text-align-last: justify;
           font-family: "iranyekanBoldnum";
-          letter-spacing: -0.5px;
-          font-size: 13px;
-          margin-top: 30px;
+          font-size: 12px;
+          margin-top: 35px;
           color: gray;
+          text-align-last: justify;
         }
         .num{
             direction: ltr;
@@ -162,62 +170,92 @@ export default function Footer() {
 
         }
         .footerLogo{
-          width: 30%;
+          width: 90px;
         }
         .address{
           display: none;
         }
+        .partThree{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
         @media screen and (min-width: 768px) {
+        .main{
+          height: 220px;
+        }
+          .Container{
+            display: block;
+            position: relative;
+          }
+          .partOne{
+          position: absolute;
+          bottom: -190px;
+          right:30px;
+          }
           .myContainer{
             display: flex;
-            flex-wrap: wrap;
             color: #036e96;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: column;
           }
           .pLeft{
               direction: ltr;
-              font-size: 11px;
+              font-size: 9px;
               margin-top: 15px;
-              
           }
-          .box{
+          .partThree{
+                position: absolute;
+                left: 37%;
+               bottom: -175px;
+          }
+         .box{
               position: absolute;
-              left: 10%;
+              left: 120px;
+              bottom: -195px;
               display: flex;
               flex-wrap: wrap;
               flex-direction: column-reverse;
           }
           .socialAndAddMain{
-            font-size: 12px;
-            text-align-last: justify;
+            font-size: 10px;
             color: #f48120;
-            margin-top: 0px;
           }
           .num{
             direction: ltr;
-            font-size: 10px;
+            font-size: 15px;
           }
           .formD{
-            position: absolute;
-            left: 38%;
-            align-items: flex-start;
-            margin-top:10%;
+
+            width: 200px;
           }
           .logo{
-            text-align: end;
+            position: absolute;
+            left: 47%;
+            bottom: -85px;
           }
-          .logoD{
-            align-items: flex-start;
-          }
-          .footerLogo{
-            width: 40%;
-          }
-          .footer-social-icon{
-             width: 55%;
+          .textMid{
+
+            font-size: 10px;
           }
           .address{
             color: #f48120;
             font-size: 14px;
             display: block;
+            text-align: center;
+          }
+          .socialAndAddMain{
+            margin-top:-5px;
+          }
+        }
+        @media screen and (min-width: 1090px) {
+          .partThree{
+            left: 42%;
+          }
+          .pLeft{
+            font-size: 11px;
           }
         }
       `}</style>
