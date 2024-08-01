@@ -74,7 +74,7 @@ export default function SectionThree() {
 				.pageSize {
 					position: relative;
 					width: 100%;
-					padding-top: 250%;
+					padding-top: 286%;
 					margin: auto;
 					background-color: #edebeb;
 				}
@@ -93,6 +93,7 @@ export default function SectionThree() {
 				.lineOne{
 					display: ruby-text;
     				margin-top: 3%;
+					    margin-bottom: 3%;
 				}
 				.answer{
 					text-align: center;
@@ -101,7 +102,8 @@ export default function SectionThree() {
 				}
 				.lineTwo{
 					display: ruby-text;
-    				margin-top: 2%
+    				margin-top: 7%;
+    				margin-bottom: 4%;
 				}
 				.boldText{
 					width: 18%;
@@ -111,7 +113,7 @@ export default function SectionThree() {
 				.firstp{
 					width: 15%;
     				margin-right: 23%;
-    				margin-top: -20%;
+    				margin-top: -18%;
 				}
 				.secondp{
 	    			width: 14%;
@@ -140,11 +142,14 @@ export default function SectionThree() {
 				}
 				@media screen and (min-width: 768px) {
 					.pageSize {
-						padding-top: 130%;
+						padding-top: 141%;
 					}
 					.mycontainer {
 						width: 75%;
 					}
+					.firstp{
+    				margin-top: -20%;
+				}
 					
 			`}</style>
 		</div>

@@ -23,14 +23,14 @@ const SectionTwo = () => {
 					<Image src={pattern1}/>
 					<Link className="a" href="#" style={{color:"#868686"}}>تولید محتوای تخصصی و اختصاصی <br/>در صنعت و ساختمان سازی</Link>
 				</div>
-				<div className="patternTwo"  style={{textAlignLast: "justify"}}>
+				<div className="patternTwo"  style={{justifySelf:"end" , textAlignLast:"justify"}}>
 					<Image src={pattern8}/>
-					<Link className="a" href="#"  style={{color:"#f58641"}}>اجرای صفر تا صد فرآیند برندینگ</Link>
+					<span style={{textAlign: "justify" }}><Link className="a" href="#"  style={{color:"#f58641"}}>اجرای صفر تا صد فرآیند برندینگ</Link></span>
 				</div>
 				<div className="patternFour" >
 					<Image src={pattern4}/>
 					<div style={{textAlignLast: "justify"}}>
-						<Link className="a" href="#" style={{color: "#007199"}}>همکاری با سازندگان و سرمایه گذاران<br/>برای خلق پروژه‌های ماندگار</Link>
+						<Link className="a" href="#" style={{color: "#007199"}}><span style={{}}>همکاری با سازندگان و سرمایه گذاران</span><br/>برای خلق پروژه‌های ماندگار</Link>
 					</div>
 				</div>
 				
@@ -78,6 +78,7 @@ const SectionTwo = () => {
 				.container {
  					 display: grid;
 					 row-gap:100px;
+					white-space: nowrap;
 					
   				}
 				.a{
@@ -99,10 +100,10 @@ const SectionTwo = () => {
   						grid-template-columns: auto auto auto;
 					
   				}
-				.a{font-size:10px}
+				.a{font-size:11px}
 			}
 			@media screen and (min-width: 992px) {
-				.a {font-size:15px}
+				.a {font-size:18px}
 			}
 			`}</style>
 		</div>
