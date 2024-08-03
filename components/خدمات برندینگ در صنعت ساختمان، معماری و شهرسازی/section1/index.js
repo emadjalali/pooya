@@ -2,6 +2,8 @@
 import Image from "next/image";
 import firstPD from "./pattern/Artboard.png"
 import firstPM from "./pattern/ArtboardTwo.png"
+import secondtPD from "./pattern/Artboard-2-two.png"
+import secondPM from "./pattern/Artboard-2.png"
 import { useRef, useEffect } from "react";
 import { register } from "swiper/element/bundle";
 register();
@@ -52,9 +54,15 @@ export default function SectionOne() {
 						/>
 					</swiper-slide>
 					<swiper-slide>
-						 {/* <Image
+					{/* <Image
 							className='slidesD'
-							src={}
+							src={secondtPD}
+							width={1920}
+							height={940}
+						/>
+						<Image
+							className='slidesM'
+							src={secondPM}
 							width={1920}
 							height={940}
 						/> */}
