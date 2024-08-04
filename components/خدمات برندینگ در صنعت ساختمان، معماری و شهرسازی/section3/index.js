@@ -123,7 +123,7 @@ export default function SectionThree() {
 				.thirthpp{
     				width: 20%;
    					margin-right: 62%;
-    				margin-top: -14%;
+    				margin-top: -13%;
 				}
 				.fourth{
 	    			width: 14%;
@@ -133,12 +133,20 @@ export default function SectionThree() {
 				.fifth{
     				width: 20%;
    					margin-right: 62%;
-    				margin-top: -12%;
+    				margin-top: -13%;
 				}
 				.sixth{
 	    			width: 14%;
    					margin-right: 23%;
    					margin-top: -19%;
+				}
+				@media screen and (min-width: 720px) {
+					.thirthpp{
+    					margin-top: -10%;
+					}
+					.fifth{
+    					margin-top: -11%;
+					}				
 				}
 				@media screen and (min-width: 768px) {
 					.pageSize {
@@ -149,8 +157,22 @@ export default function SectionThree() {
 					}
 					.firstp{
     				margin-top: -20%;
+					}
+					.thirthpp{
+    					margin-top: -14%;
+					}
+					.fifth{
+    					margin-top: -14%;
+					}	
 				}
-					
+				@media screen and (min-width: 1250px) {
+					.thirthpp{
+    					margin-top: -13%;
+					}
+					.fifth{
+    					margin-top: -11%;
+					}				
+				}	
 			`}</style>
 		</div>
 	);

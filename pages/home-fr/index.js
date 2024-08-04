@@ -6,6 +6,7 @@ import SectionFour from "../../components/خدمات برندینگ در صنع�
 import Layout from '../../components/Layout'
 import NestedLayout from '../../components/nested-layout-fr'
 
+
 export default function HomeFr() {
 	return (
 		<div style={{fontFamily:"iranYekanRegularNum"}}>
@@ -65,8 +66,8 @@ export default function HomeFr() {
 				}
 				.secondSection{
 					display: ruby-text;
-					padding-top:125%;
-					padding-bottom:5%;
+					padding-top:10%;
+					padding-bottom:10%;
 					position: relative;
 					width: 100%;
 					margin: auto;

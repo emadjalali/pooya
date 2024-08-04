@@ -1,18 +1,14 @@
 "use client";
 import Image from "next/image";
-import firstPD from "./pattern/Artboard.png"
-import firstPM from "./pattern/ArtboardTwo.png"
-import secondtPD from "./pattern/Artboard-2-two.png"
-import secondPM from "./pattern/Artboard-2.png"
+
 import { useRef, useEffect } from "react";
 import { register } from "swiper/element/bundle";
 register();
 
+// import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-
 export default function SectionOne() {
 	const swiperElRef = useRef(null);
 	const nextButtonElRef = useRef(null);
@@ -30,9 +26,10 @@ export default function SectionOne() {
 	}, []);
 
 	return (
-		<div className="pageSize">
-			<div className="section">
-			<swiper-container
+		<div className='pageSize'>
+			<div className='section'>
+				{/* <!-- Additional required wrapper --> */}
+				<swiper-container
 					ref={swiperElRef}
 					css-mode='true'
 					loop='true'
@@ -42,30 +39,58 @@ export default function SectionOne() {
 					<swiper-slide>
 						<Image
 							className='slidesD'
-							src={firstPD}
+							src='/Artboard-1D.png'
 							width={1920}
 							height={940}
 						/>
 						<Image
 							className='slidesM'
-							src={firstPM}
-							width={1920}
-							height={940}
+							src='/Artboard-1M.png'
+							width={900}
+							height={1500}
 						/>
 					</swiper-slide>
 					<swiper-slide>
-					{/* <Image
+						<Image
 							className='slidesD'
-							src={secondtPD}
+							src='/Artboard-2D.png'
 							width={1920}
 							height={940}
 						/>
 						<Image
 							className='slidesM'
-							src={secondPM}
+							src='/Artboard-2M.png'
+							width={900}
+							height={1500}
+						/>
+					</swiper-slide>
+					<swiper-slide>
+						<Image
+							className='slidesD'
+							src='/'
 							width={1920}
 							height={940}
-						/> */}
+						/>
+						<Image
+							className='slidesM'
+							src='/Artboard-3M.png'
+							width={900}
+							height={1500}
+						/>
+					</swiper-slide>
+					<swiper-slide>
+						<Image
+							className='slidesD'
+							src='/'
+							width={1920}
+							height={940}
+						/>
+						<Image
+							className='slidesM'
+							src='/Artboard-4M.png'
+							width={900}
+							height={1500}
+						/>
 					</swiper-slide>
 				</swiper-container>
 				<button
@@ -85,11 +110,12 @@ export default function SectionOne() {
 					onClick={() => swiperElRef.current.swiper.slideNext()}
 				/>
 			</div>
+
 			<style jsx global>{`
 				.pageSize {
 					position: relative;
 					width: 100%;
-					padding-top: 50%;
+					padding-top: 167%;
 					margin: auto;
 					background-color: #0e0a0a;
 				}
@@ -149,10 +175,20 @@ export default function SectionOne() {
 					transform: translate(-50%, -50%);
 					z-index: 5;
 				}
+
+				.feeling {
+					position: absolute;
+					margin: 0 auto;
+					left: 50%;
+					transform: translate(-50%);
+					top: 91%;
+					z-index: 5;
+					max-width: 16%;
+				}
 				@media screen and (min-width: 768px) {
-					// .pageSize {
-					// 	padding-top: 49%;
-					// }
+					.pageSize {
+						padding-top: 49%;
+					}
 
 					.slidebuttonnext {
 						background-color: #404041;
@@ -185,6 +221,14 @@ export default function SectionOne() {
 					}
 					.slidebuttonprev:hover {
 						opacity: 1;
+					}
+
+					.feeling {
+						position: absolute;
+						margin: 0 auto;
+						left: 50%;
+						transform: translate(-50%);
+						top: 87%;
 					}
 
 					.slidesD {
