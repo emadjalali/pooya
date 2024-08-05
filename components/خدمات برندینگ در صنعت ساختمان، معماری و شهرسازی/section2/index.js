@@ -1,45 +1,49 @@
 import Image from "next/image";
 import Link from "next/link";
-import pattern1 from "./colorPattern2/home-35.svg";
-import pattern8 from "./colorPattern2/home-34.svg";
-import pattern2 from "./colorPattern2/home-36.svg";
-import pattern3 from "./colorPattern2/home-37.svg";
-import pattern4 from "./colorPattern2/home-38.svg";
-import pattern5 from "./colorPattern2/home-39.svg";
-import pattern6 from "./colorPattern2/home-40.svg";
-import pattern7 from "./colorPattern2/home-41.svg";
+import pattern1 from "./blackPattern2/home.png";
+import pattern2 from "./blackPattern2/home2.png";
+import pattern3 from "./blackPattern2/home3.png";
+import pattern4 from "./blackPattern2/home4.png";
+import pattern5 from "./blackPattern2/home5.png";
+import pattern6 from "./blackPattern2/home6.png";
+import pattern7 from "./blackPattern2/home7.png";
+import pattern8 from "./blackPattern2/home8.png";
 
 const SectionTwo = () => {
 	return (
 		<div className=''>
 			<div className='containerD'>
 				<div className='patternTwo'>
-					<Image src={pattern2} />
-					<Link className='a' href='#' style={{ color: "#f58641" }}>
+					<Image src={pattern3} />
+					<Link className='a' href='#' style={{ color: "black" }}>
 						سند اختصاصی راهنمای جامع برند
 					</Link>
 				</div>
 				<div className='patternOne'>
-					<Image src={pattern1} />
-					<Link className='a' href='#' style={{ color: "#868686" }}>
-						تولید محتوای تخصصی و اختصاصی <br />
-						در صنعت و ساختمان سازی
-					</Link>
+					<Image src={pattern2} />
+					<div>
+						{/* <Link className='a' href='#' style={{ color: "black" }}>
+							تولید محتوای تخصصی و اختصاصی <br />
+							<span className="lineSpace">در صنعت و ساختمان سازی</span>
+						</Link> */}
+						<Link className="a" href={{}} style={{ color: "black" , display:"block" , textAlignLast:"justify"}}>تولید محتوای تخصصی و اختصاصی</Link>
+						<Link className="a" href={{}} style={{ color: "black" }}>در صنعت و ساختمان سازی</Link>
+					</div>
 				</div>
 				<div
 					className='patternTwo'
 					style={{ justifySelf: "end", textAlignLast: "justify" }}>
-					<Image src={pattern8} />
+					<Image src={pattern1} />
 					<span style={{ textAlign: "justify" }}>
-						<Link className='a' href='#' style={{ color: "#f58641" }}>
+						<Link className='a' href='#' style={{ color: "black" }}>
 							اجرای صفر تا صد فرآیند برندینگ
 						</Link>
 					</span>
 				</div>
 				<div className='patternFour'>
-					<Image src={pattern4} />
+					<Image src={pattern5} />
 					<div style={{ textAlignLast: "justify" }}>
-						<Link className='a' href='#' style={{ color: "#007199" }}>
+						<Link className='a' href='#' style={{ color: "black" }}>
 							<span style={{}}>همکاری با سازندگان و سرمایه گذاران</span>
 							<br />
 							برای خلق پروژه‌های ماندگار
@@ -52,28 +56,28 @@ const SectionTwo = () => {
 				<div
 					className='patternThree'
 					style={{ justifySelf: "end", textAlignLast: "justify" }}>
-					<Image src={pattern3} />
+					<Image src={pattern4} />
 					<div style={{ textAlignLast: "justify" }}>
 						<Link
 							className='a'
 							href='#'
-							style={{ color: "#007199", fontKerning: "none" }}>
+							style={{ color: "black", fontKerning: "none" }}>
 							پرسش و پاسخ های تخصصی
 						</Link>
 					</div>
 				</div>
 
 				<div className='patternSeven'>
-					<Image src={pattern7} />
+					<Image src={pattern8}/>
 					<Link className='a' href='#' style={{ color: "black" }}>
 						عارضه یابی برند{" "}
 					</Link>
 				</div>
 
-				<div className='patternSix'>
-					<Image src={pattern6} />
+				<div className='patternSix' style={{justifySelf:"center"}}>
+					<Image src={pattern7} />
 					<div style={{ textAlign: "center" }}>
-						<Link className='a' href='#' style={{ color: "#f58641" }}>
+						<Link className='a' href='#' style={{ color: "black" }}>
 							طراحی تجربه
 						</Link>
 					</div>
@@ -81,9 +85,9 @@ const SectionTwo = () => {
 				<div
 					className='patternFive'
 					style={{ justifySelf: "end", textAlignLast: "justify" }}>
-					<Image src={pattern5} />
+					<Image src={pattern6} />
 					<div style={{ textAlignLast: "justify" }}>
-						<Link className='a' href='#' style={{ color: "#007199" }}>
+						<Link className='a' href='#' style={{ color: "black" }}>
 							راهکارهای خلاق حس یک نگاه
 						</Link>
 					</div>
@@ -94,70 +98,68 @@ const SectionTwo = () => {
 				</div> */}
 			</div>
 			<div className='containerM'>
-				<div
-					className='patternTwo'
-					style={{ justifySelf: "end", textAlignLast: "justify" }}>
-					<Image src={pattern8} />
+				<div className='patternTwo'>
+					<Image src={pattern1} />
 					<span style={{ textAlign: "justify" }}>
-						<Link className='a' href='#' style={{ color: "#f58641" }}>
+						<Link className='a' href='#' style={{ color: "black" }}>
 							اجرای صفر تا صد فرآیند برندینگ
 						</Link>
 					</span>
 				</div>
 				<div className='patternOne'>
-					<Image src={pattern1} />
-					<Link className='a' href='#' style={{ color: "#868686" }}>
+					<Image src={pattern2} />
+					<Link className='a' href='#' style={{ color: "black" }}>
 						تولید محتوای تخصصی و اختصاصی <br />
-						در صنعت و ساختمان سازی
+						در صنعتِ ساختمان و معماری
 					</Link>
 				</div>
-				<div className='patternThree'>
-					<Image src={pattern3} />
+				<div className='patternThree' style={{justifySelf:"baseline"}}>
+					<Image src={pattern4} />
 					<div style={{ textAlignLast: "justify" }}>
 						<Link
 							className='a'
 							href='#'
-							style={{ color: "#007199", fontKerning: "none" }}>
+							style={{ color: "black", fontKerning: "none" }}>
 							پرسش و پاسخ های تخصصی
 						</Link>
 					</div>
 				</div>
 				<div className='patternTwo'>
-					<Image src={pattern2} />
-					<Link className='a' href='#' style={{ color: "#f58641" }}>
+					<Image src={pattern3} />
+					<Link className='a' href='#' style={{ color: "black" }}>
 						سند اختصاصی راهنمای جامع برند
 					</Link>
 				</div>
 
-				<div className='patternFive'>
-					<Image src={pattern5} />
+				<div className='patternFive' style={{justifySelf:"baseline"}}>
+					<Image src={pattern6} />
 					<div style={{ textAlignLast: "justify" }}>
-						<Link className='a' href='#' style={{ color: "#007199" }}>
+						<Link className='a' href='#' style={{ color: "black" }}>
 							راهکارهای خلاق حس یک نگاه
 						</Link>
 					</div>
 				</div>
 
-				<div className='patternSix'>
-					<Image src={pattern6} />
+				<div className='patternSix' style={{justifySelf:"center"}}>
+					<Image src={pattern7} />
 					<div style={{ textAlign: "center" }}>
-						<Link className='a' href='#' style={{ color: "#f58641" }}>
+						<Link className='a' href='#' style={{ color: "black" }}>
 							طراحی تجربه
 						</Link>
 					</div>
 				</div>
 
-				<div className='patternSeven'>
-					<Image src={pattern7} />
+				<div className='patternSeven' style={{ textAlign: "center" }}>
+					<Image src={pattern8}/>
 					<Link className='a' href='#' style={{ color: "black" }}>
 						عارضه یابی برند{" "}
 					</Link>
 				</div>
 
 				<div className='patternFour'>
-					<Image src={pattern4} />
+					<Image src={pattern5} />
 					<div style={{ textAlignLast: "justify" }}>
-						<Link className='a' href='#' style={{ color: "#007199" }}>
+						<Link className='a' href='#' style={{ color: "black" }}>
 							<span style={{}}>همکاری با سازندگان و سرمایه گذاران</span>
 							<br />
 							برای خلق پروژه‌های ماندگار
@@ -184,7 +186,7 @@ const SectionTwo = () => {
 				.a {
 					text-decoration: none;
 					font-weight: bold;
-					font-size: 20px;
+					font-size: 30px;
 				}
 				img {
 					margin-bottom: 15px;
@@ -207,18 +209,34 @@ const SectionTwo = () => {
 						row-gap: 100px;
 					}
 					.a {
-						font-size: 11px;
+						font-size: 13px;
 					}
 				}
-				@media screen and (min-width: 901px) {
+				@media screen and (min-width: 814px) {
 					.a {
 						font-size: 15px;
 					}
 				}
-				@media screen and (min-width: 1033px) {
+				@media screen and (min-width: 927px) {
 					.a {
 						font-size: 18px;
 					}
+				}
+				@media screen and (min-width: 1079px) {
+					.a {
+						font-size: 22px;
+					}
+					// .lineSpace{
+					// 	word-spacing: 6px;
+					// }
+				}
+				@media screen and (min-width: 1245px) {
+					.a {
+						font-size: 25px;
+					}
+					// .lineSpace{
+					// 	word-spacing: 11px;
+					// }
 				}
 			`}</style>
 		</div>

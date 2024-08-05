@@ -16,11 +16,13 @@ const Nav = () => {
 				<li
 					// onClick={() => setExpand((prev) => !prev)}
 					className='navitem'>
-					<div className="firstNI"  className={`${btnUl ? "firstNIshow" : "firstNIhide"}`}><p >خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</p></div>
-					<div className="secondBtn">
+					<div style={{position:"relative"}}>
+						<div className="firstNI"  className={`${btnUl ? "firstNIshow" : "firstNIhide"}`}><p >خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</p></div>
+						<div className="secondBtn">
 						<i onClick={clickHandler}>
 							{btnUl == false ? (<IoIosArrowDown style={{width:"20px"}}/>) : (<IoIosArrowUp style={{ color: "orange" , width:"20px"}} />)}
 						</i>
+						</div>
 					</div>
 					<div className={`${btnUl ? "navshow" : "navhide"}`}>
 						<ul className="ul">
@@ -41,6 +43,7 @@ const Nav = () => {
 							</li>
 						</ul>
 					</div>
+					
 				</li>
 				<li className='HVR navitem'>
 					<Link
@@ -104,8 +107,8 @@ const Nav = () => {
 				}
 				.secondBtn{
 					position: absolute;
-					top:24px;
-					margin-right: 415px;
+					top:5px;
+					margin-right: 350px;
 				}
 				.firstNI{
 					font-size:15px;
@@ -140,7 +143,7 @@ const Nav = () => {
 						font-size:20px;
 					}
 					.secondBtn{
-						margin-right: 510px;
+						margin-right: 430px;
 					}
 				}
 
@@ -164,12 +167,13 @@ const Nav = () => {
 				}
 				.firstNI{
        				 margin-left: -10px;
-        			font-size: 14px;
+        			font-size: 16px;
         			margin-right: -15px;
 				}
 				.secondBtn{
-					margin-right: 345px;
-        			top: 30px;
+					top: 8px;
+    				position: absolute;
+    				left: 2px;
 				}
 					.nav {
 						display: flex;
@@ -185,7 +189,7 @@ const Nav = () => {
 					.navitem {
 						padding-left: 0px;
 						flex-grow: 1;
-						font-size:14px;
+						font-size:16px;
 						height: 65px;
 					}
 
@@ -203,14 +207,24 @@ const Nav = () => {
 						line-height: 12px;
 					}
 				}
-				@media screen and (min-width: 955px){
+				@media screen and (min-width: 850px){
 					.secondBtn{
-						margin-right: 370px;
+						left:10px
+					}
+				}
+				@media screen and (min-width: 970px){
+					.secondBtn{
+						left:20px
+					}
+				}
+				@media screen and (min-width: 1080px){
+					.secondBtn{
+						left:30px
 					}
 				}
 				@media screen and (min-width: 1120px){
 					.secondBtn{
-						margin-right: 460px;
+						left: 30px
 					}
 					.navitem {
 						font-size:18px
@@ -219,10 +233,10 @@ const Nav = () => {
 						font-size:17px
 					}
 				}
-				@media screen and (min-width: 1250px){
-					.secondBtn{
-						margin-right: 510px;
-					}
+				@media screen and (min-width: 1245px){
+					// .secondBtn{
+					// 	left:30px
+					// }
 					.navitem {
 						font-size:20px
 					}
@@ -231,8 +245,13 @@ const Nav = () => {
 					}
 				}
 				@media screen and (min-width: 1300px){
+					// .secondBtn{
+					// 	
+					// }
+				}
+				@media screen and (min-width: 1310px){
 					.secondBtn{
-						margin-right: 530px;
+						left: 40px;
 					}
 				}
 			`}</style>

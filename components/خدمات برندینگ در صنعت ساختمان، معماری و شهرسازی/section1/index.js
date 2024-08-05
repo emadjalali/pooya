@@ -64,7 +64,7 @@ export default function SectionOne() {
 							height={1500}
 						/>
 					</swiper-slide>
-					<swiper-slide>
+					{/* <swiper-slide>
 						<Image
 							className='slidesD'
 							src='/'
@@ -91,7 +91,7 @@ export default function SectionOne() {
 							width={900}
 							height={1500}
 						/>
-					</swiper-slide>
+					</swiper-slide> */}
 				</swiper-container>
 				<button
 					ref={nextButtonElRef}
