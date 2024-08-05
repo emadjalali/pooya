@@ -27,7 +27,7 @@ export default function SectionOne() {
 
 	return (
 		<div className='pageSize'>
-			<div className='section'>
+			<div className='section' style={{ direction: "ltr" }}>
 				{/* <!-- Additional required wrapper --> */}
 				<swiper-container
 					ref={swiperElRef}

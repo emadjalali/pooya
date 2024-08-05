@@ -1,20 +1,18 @@
-
+"use client";
 import SectionOne from "../../components/خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی/section1";
 import SectionTwo from "../../components/خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی/section2";
 import SectionThree from "../../components/خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی/section3";
 import SectionFour from "../../components/خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی/section4";
-import Layout from '../../components/Layout'
-import NestedLayout from '../../components/nested-layout-fr'
-
+import Layout from "../../components/Layout";
+import NestedLayout from "../../components/nested-layout-fr";
 
 export default function HomeFr() {
 	return (
-		<div style={{fontFamily:"iranYekanRegularNum"}}>
+		<div>
 			<section
-				id="sectionOne"
+				id='sectionOne'
 				// className=' bg-[#0e0a0a] flex justify-around'
 				style={{
-
 					position: "relative",
 					width: "100%",
 					margin: "auto",
@@ -30,7 +28,7 @@ export default function HomeFr() {
 				// 	width: "100%",
 				// 	margin: "auto",
 				// }}
-				>
+			>
 				<SectionTwo />
 			</section>
 			<section
@@ -45,15 +43,25 @@ export default function HomeFr() {
 			<section
 				// className='bg-orange-500 h-[100vh]'
 				style={{
-					paddingTop:"5%",
+					paddingTop: "5%",
 					position: "relative",
 					width: "100%",
 					margin: "auto",
 				}}>
 				<SectionFour />
 			</section>
-			<div className="backToUp">
-				<a style={{color:"#f89b61" , textDecoration:"none" , fontWeight:"900" , fontSize:"18px" , fontFamily:"fantasy"}} href="#sectionOne">رفتن به بالا</a>
+			<div className='backToUp'>
+				<a
+					style={{
+						color: "#f89b61",
+						textDecoration: "none",
+						fontWeight: "900",
+						fontSize: "18px",
+						fontFamily: "fantasy",
+					}}
+					href='#sectionOne'>
+					رفتن به بالا
+				</a>
 			</div>
 			<style jsx>{`
 				.firstsection {
@@ -64,17 +72,17 @@ export default function HomeFr() {
 				}
 				.firstsectionSubHead {
 				}
-				.secondSection{
+				.secondSection {
 					display: ruby-text;
-					padding-top:10%;
-					padding-bottom:10%;
+					padding-top: 10%;
+					padding-bottom: 10%;
 					position: relative;
 					width: 100%;
 					margin: auto;
 				}
-				.backToUp{
+				.backToUp {
 					margin: 35px 0px 35px 0px;
-    				text-align: center;
+					text-align: center;
 				}
 				@media screen and (min-width: 768px) {
 					.firstsection {
@@ -85,11 +93,13 @@ export default function HomeFr() {
 					}
 					.firstsectionSubHead {
 					}
-					.secondSection{
-						padding-top:5%;
+					.secondSection {
+						padding-top: 5%;
 						display: block;
 					}
-					.backToUp{display:none;}
+					.backToUp {
+						display: none;
+					}
 				}
 			`}</style>
 		</div>
@@ -98,8 +108,8 @@ export default function HomeFr() {
 
 HomeFr.getLayout = function getLayout(page) {
 	return (
-	  <Layout>
-		<NestedLayout>{page}</NestedLayout>
-	  </Layout>
-	)
-  }
+		<Layout>
+			<NestedLayout>{page}</NestedLayout>
+		</Layout>
+	);
+};
