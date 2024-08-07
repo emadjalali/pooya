@@ -100,7 +100,7 @@ const SectionTwo = () => {
 			<div className='containerM'>
 				<div className='pattern'>
 					<Image src={pattern1} />
-					<span style={{ textAlign: "justify" }}>
+					<span style={{ textAlignLast: "justify" }}>
 						<Link className='a' href='#' style={{ color: "black" }}>
 							اجرای صفر تا صد فرآیند برندینگ
 						</Link>
@@ -108,10 +108,14 @@ const SectionTwo = () => {
 				</div>
 				<div className='pattern'>
 					<Image src={pattern2} />
-					<Link className='a' href='#' style={{ color: "black" }}>
-						تولید محتوای تخصصی و اختصاصی <br />
-						در صنعتِ ساختمان و معماری
-					</Link>
+					<div>
+						{/* <Link className='a' href='#' style={{ color: "black" }}>
+							تولید محتوای تخصصی و اختصاصی <br />
+							<span className="lineSpace">در صنعت و ساختمان سازی</span>
+						</Link> */}
+						<Link className="a" href={{}} style={{ color: "black" , display:"block" , textAlignLast:"justify"}}>تولید محتوای تخصصی و اختصاصی</Link>
+						<Link className="a" href={{}} style={{ color: "black" }}>در صنعت و ساختمان سازی</Link>
+					</div>
 				</div>
 				<div className='pattern' style={{justifySelf:"baseline"}}>
 					<Image src={pattern4} />
@@ -183,19 +187,17 @@ const SectionTwo = () => {
 				.a {
 					text-decoration: none;
 					font-weight: bold;
-					font-size: 27px;
+					font-size: 21px;
 				}
 				img {
 					margin-bottom: 15px;
 				}
+				@media screen and (min-width: 320px) {
+					.a{
+					font-size:24px
+					}
+				}
 			@media screen and (min-width: 390px) {
-				// .pageSize {
-				// 	position: relative;
-				// 	width: 100%;
-				// 	padding-top: 167%;
-				// 	margin: auto;
-				// 	background-color: white;
-				// }
 				.pattern{
 					width:85%
 				}
@@ -203,6 +205,7 @@ const SectionTwo = () => {
 					font-size:30px
 				}
 			}
+
 				@media screen and (min-width: 768px) {
 					// .pageSize {
 					// 	padding-top: 56%;
