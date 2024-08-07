@@ -148,7 +148,8 @@ export default function Footer() {
 					font-size: 12px;
 				}
 				.logo {
-					display: ruby-text;
+					justify-items: center;
+    				display: grid;
 					margin-top: 20px;
 				}
 				.icons {

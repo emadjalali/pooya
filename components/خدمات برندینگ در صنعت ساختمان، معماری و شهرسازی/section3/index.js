@@ -101,7 +101,7 @@ export default function SectionThree() {
 				.pageSize {
 					position: relative;
 					width: 100%;
-					padding-top: 286%;
+					padding-top: 290%;
 					margin: auto;
 					background-color: #edebeb;
 				}

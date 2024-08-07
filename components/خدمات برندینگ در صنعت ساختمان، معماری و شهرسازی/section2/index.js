@@ -98,7 +98,7 @@ const SectionTwo = () => {
 				</div> */}
 			</div>
 			<div className='containerM'>
-				<div className='patternTwo'>
+				<div className='pattern'>
 					<Image src={pattern1} />
 					<span style={{ textAlign: "justify" }}>
 						<Link className='a' href='#' style={{ color: "black" }}>
@@ -106,14 +106,14 @@ const SectionTwo = () => {
 						</Link>
 					</span>
 				</div>
-				<div className='patternOne'>
+				<div className='pattern'>
 					<Image src={pattern2} />
 					<Link className='a' href='#' style={{ color: "black" }}>
 						تولید محتوای تخصصی و اختصاصی <br />
 						در صنعتِ ساختمان و معماری
 					</Link>
 				</div>
-				<div className='patternThree' style={{justifySelf:"baseline"}}>
+				<div className='pattern' style={{justifySelf:"baseline"}}>
 					<Image src={pattern4} />
 					<div style={{ textAlignLast: "justify" }}>
 						<Link
@@ -124,14 +124,14 @@ const SectionTwo = () => {
 						</Link>
 					</div>
 				</div>
-				<div className='patternTwo'>
+				<div className='pattern'>
 					<Image src={pattern3} />
 					<Link className='a' href='#' style={{ color: "black" }}>
 						سند اختصاصی راهنمای جامع برند
 					</Link>
 				</div>
 
-				<div className='patternFive' style={{justifySelf:"baseline"}}>
+				<div className='pattern' style={{justifySelf:"baseline"}}>
 					<Image src={pattern6} />
 					<div style={{ textAlignLast: "justify" }}>
 						<Link className='a' href='#' style={{ color: "black" }}>
@@ -140,7 +140,7 @@ const SectionTwo = () => {
 					</div>
 				</div>
 
-				<div className='patternSix' style={{justifySelf:"center"}}>
+				<div className='pattern'>
 					<Image src={pattern7} />
 					<div style={{ textAlign: "center" }}>
 						<Link className='a' href='#' style={{ color: "black" }}>
@@ -149,14 +149,14 @@ const SectionTwo = () => {
 					</div>
 				</div>
 
-				<div className='patternSeven' style={{ textAlign: "center" }}>
+				<div className='pattern' style={{ textAlign: "center" }}>
 					<Image src={pattern8}/>
 					<Link className='a' href='#' style={{ color: "black" }}>
 						عارضه یابی برند{" "}
 					</Link>
 				</div>
 
-				<div className='patternFour'>
+				<div className='pattern'>
 					<Image src={pattern5} />
 					<div style={{ textAlignLast: "justify" }}>
 						<Link className='a' href='#' style={{ color: "black" }}>
@@ -168,6 +168,27 @@ const SectionTwo = () => {
 				</div>
 			</div>
 			<style jsx global>{`
+			.pattern{
+				width:85%
+			}
+			.containerD {
+					display: none;
+				}
+				.containerM {
+					display: grid;
+					row-gap: 100px;
+					white-space: nowrap;
+					padding-right: 20px; 
+				}
+				.a {
+					text-decoration: none;
+					font-weight: bold;
+					font-size: 27px;
+				}
+				img {
+					margin-bottom: 15px;
+				}
+			@media screen and (min-width: 390px) {
 				// .pageSize {
 				// 	position: relative;
 				// 	width: 100%;
@@ -175,22 +196,13 @@ const SectionTwo = () => {
 				// 	margin: auto;
 				// 	background-color: white;
 				// }
-				.containerD {
-					display: none;
+				.pattern{
+					width:85%
 				}
-				.containerM {
-					display: grid;
-					row-gap: 100px;
-					white-space: nowrap;
+				.a{
+					font-size:30px
 				}
-				.a {
-					text-decoration: none;
-					font-weight: bold;
-					font-size: 30px;
-				}
-				img {
-					margin-bottom: 15px;
-				}
+			}
 				@media screen and (min-width: 768px) {
 					// .pageSize {
 					// 	padding-top: 56%;

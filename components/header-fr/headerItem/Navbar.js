@@ -108,7 +108,10 @@ const Nav = () => {
 				.secondBtn{
 					position: absolute;
 					top:5px;
-					margin-right: 350px;
+    				margin-right: 15px;
+    				width: 100%;
+    				direction: ltr;
+				}
 				}
 				.firstNI{
 					font-size:15px;
@@ -127,14 +130,26 @@ const Nav = () => {
 
 				.navitem {
 					padding-left: 50px;
-					padding-top: 20px;
-					font-size: 18px;
+					padding-top: 15px;
+					font-size: 15px;
 				}
 
 				.branditem {
 					padding-top: 5px;
 					font-size: 15px;
 				}
+			@media screen and (min-width: 390px){
+				.navitem {
+					padding-top: 20px;
+					font-size: 18px;
+				}
+			}
+			@media screen and (min-width: 425px){
+				.secondBtn{
+       				width: auto;
+        			margin-right: 350px;
+				}
+			}
 				@media screen and (min-width: 560px){
 					.navitem{
 						font-size:22px;
