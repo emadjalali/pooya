@@ -131,7 +131,7 @@ const Nav = () => {
 				.navitem {
 					padding-left: 50px;
 					padding-top: 15px;
-					font-size: 15px;
+					font-size: 13.5px;
 				}
 
 				.branditem {
