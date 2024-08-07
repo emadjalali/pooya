@@ -131,23 +131,35 @@ const Nav = () => {
 				.navitem {
 					padding-left: 50px;
 					padding-top: 15px;
-					font-size: 13.5px;
+					font-size: 12.5px;
 				}
 
 				.branditem {
 					padding-top: 5px;
 					font-size: 15px;
 				}
+			@media screen and (min-width: 330px){
+				.navitem {
+					font-size: 12.5px;
+				}
+				.secondBtn{
+					 width: 90%;
+				}
+			}
 			@media screen and (min-width: 390px){
 				.navitem {
 					padding-top: 20px;
 					font-size: 17px;
+				}
+				.secondBtn{
+					 width: 100%;
 				}
 			}
 			@media screen and (min-width: 425px){
 				.secondBtn{
        				width: auto;
         			margin-right: 335px;
+					 
 				}
 			}
 				@media screen and (min-width: 560px){
