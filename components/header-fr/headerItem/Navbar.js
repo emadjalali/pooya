@@ -141,13 +141,13 @@ const Nav = () => {
 			@media screen and (min-width: 390px){
 				.navitem {
 					padding-top: 20px;
-					font-size: 18px;
+					font-size: 17px;
 				}
 			}
 			@media screen and (min-width: 425px){
 				.secondBtn{
        				width: auto;
-        			margin-right: 350px;
+        			margin-right: 335px;
 				}
 			}
 				@media screen and (min-width: 560px){
