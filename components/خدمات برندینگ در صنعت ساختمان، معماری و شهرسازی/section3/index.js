@@ -13,6 +13,7 @@ import به_چگونگی from "./blackPattern3/home-22.svg";
 import بازاریابی from "./blackPattern3/home-20.svg";
 import اجرا from "./colorPattern3/home-48.svg";
 import زندگی from "./blackPattern3/home-24.svg";
+// import BrandDiscovery from "@/pages/section3Pages/کشف-برند";
 export default function SectionThree() {
 	return (
 		<div>
@@ -42,7 +43,7 @@ export default function SectionThree() {
 						<Image src={lineTwo} style={{ width: "30px" }} />
 					</div>
 					<div className='boldText'>
-						<Link href={"#"}>
+						<Link href={"/section3Pages/BrandDiscovery"}>
 							<Image src={کشف} style={{ height: "220%" }} />
 						</Link>
 					</div>
@@ -56,7 +57,7 @@ export default function SectionThree() {
 						/>
 					</div>
 					<div className='boldText'>
-						<Link href={"#"}>
+						<Link href={"/section3Pages/BrandCreation"}>
 							<Image src={خلق} style={{ height: "220%" }} />
 						</Link>
 					</div>
