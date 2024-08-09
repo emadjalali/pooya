@@ -10,14 +10,14 @@ export default function BrandDiscovery(){
             </div> */}
             <div className="firstPart">
                 <h1 className="title">کشف برند</h1>
-                <Image src={picture} style={{width:"75%"}}></Image>
+                <Image src={picture} className="picture"></Image>
             </div>
             <div className="secondPart" style={{direction:"rtl"}}>
                 <div className="POne">
                     <p>در حس یک نگاه، پیش از هر چیز به شیوه ای ساختارمند (و البته چالش بر انگیز) به شناخت انسان با یک سازمان می پردازیم، به این شناخت عمق می دهیم سپس از دل آن مفاهیمی منحصر به فرد استخراج میکنیم؛ مفاهیمی که فلسفه ی وجودی برند یک فرد یا یک سازمان را شکل می دهند</p>
                 </div>
                 <div className="PTwo">
-                   <p style={{fontSize:"24px" , color:"black"}}>در مرحله کشف برند ، از این سه ابزار استفاده می شود:</p> 
+                   <p className="Ptitle">در مرحله کشف برند ، از این سه ابزار استفاده می شود:</p> 
                    <p>پرسشنامه اخنصاصی حس یک نگاه برای کشف برند</p> 
                    <p>ازمون های استاندارد روانشناسی برند</p> 
                    <p>جلسه های حضوری/آنلان باکارگروه استراتزی یرند</p> 
@@ -26,7 +26,7 @@ export default function BrandDiscovery(){
                     <p>  کشف برند یا  Brand Discovery، در واقع به چرایی منحصر به فرد یک فرد یا سازمان می پردازد و مهمترین دستاورد برای شروع طراحی استراتزی بزند (یا همان چیستی برند) به حساب می اید </p>
                 </div>
                 <div className="pattern">
-                    <Image src={pattern} style={{width:"7%"}}></Image>
+                    <Image src={pattern} style={{width:"4%"}}></Image>
                 </div>
             </div>
             <div className="positionButtoms">
@@ -116,11 +116,54 @@ export default function BrandDiscovery(){
                 .pattern{
                     width: 75%;
                     margin-bottom: 60px;
-                    margin-top: 60px;
+                    margin-top: 14%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                } 
+                }
+                .picture{
+                    width: 75%;  
+                }
+                .Ptitle{
+                    font-size:24px;
+                    color:black
+                }
+                @media screen and (min-width: 768px) {
+                    .picture{
+                        width: 30%;  
+                    }  
+                    .PThree{
+                        font-size: 20px;
+                        width: 85%;
+                    }
+                    .POne{
+                        font-size: 20px;
+                        width: 85%;
+                    }
+                    .PTwo{
+                        font-weight: 400;
+                        color: #ffb733;
+                        width: 85%;
+                        font-size: 22px;
+                    }
+                    .Ptitle{
+                        font-weight: 400;
+                        color: #ffca69;
+                        font-size: 18px; 
+                    }
+                    .pattern{
+                        margin-top: 15%;
+                    }
+                    .positionButtoms {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        flex-wrap: nowrap;
+                        align-items: flex-end;
+                        justify-content: space-around;
+                    }
+                    .buttomTwo{background-color: #939191;}
+                    .buttomThree{background-color: #939191;}
+                }
             `}</style>
         </div>
     )
