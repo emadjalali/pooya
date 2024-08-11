@@ -71,7 +71,7 @@ export default function SectionThree() {
 						<Image src={lineTwo} />
 					</div>
 					<div className='boldText'>
-						<Link href={"#"}>
+						<Link href={"/section3Pages/RouteDesign"}>
 							<Image src={مسیر} style={{ height: "220%" }} />
 						</Link>
 					</div>
@@ -102,7 +102,7 @@ export default function SectionThree() {
 				.pageSize {
 					position: relative;
 					width: 100%;
-					padding-top: 290%;
+					padding-top: 295%;
 					margin: auto;
 					background-color: #edebeb;
 				}
@@ -167,6 +167,11 @@ export default function SectionThree() {
 					width: 14%;
 					margin-right: 23%;
 					margin-top: -19%;
+				}
+				@media screen and (min-width: 485px) {
+					.pageSize {
+						padding-top: 270%;
+					}
 				}
 				@media screen and (min-width: 720px) {
 					.thirthpp {

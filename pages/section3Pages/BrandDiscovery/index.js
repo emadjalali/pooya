@@ -1,6 +1,8 @@
 import picture from "./کشف-برند.jpg"
 import pattern from "./pattern.svg"
 import Image from "next/image"
+import Layout from "@/components/Layout"
+import NestedLayout from "@/components/nested-layout-fr"
 
 export default function BrandDiscovery(){
     return(
@@ -79,6 +81,7 @@ export default function BrandDiscovery(){
                     flex-direction: column;
                     flex-wrap: nowrap;
                     align-items: center;
+                    margin-bottom: 20%;
                 }
                 .firstPart{
                     display: flex;
@@ -166,6 +169,14 @@ export default function BrandDiscovery(){
                 }
             `}</style>
         </div>
+    )
+}
+
+BrandDiscovery.getLayout = function getLayout(page){
+    return(
+        <Layout>
+            <NestedLayout>{page}</NestedLayout>
+        </Layout>
     )
 }
 

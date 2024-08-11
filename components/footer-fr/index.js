@@ -130,6 +130,7 @@ export default function Footer() {
 					padding: 0px 20px 0px 20px;
 					flex-wrap: wrap;
 					flex-direction: column;
+					margin-bottom: 20%;
 				}
 				.myContainer {
 					display: flex;

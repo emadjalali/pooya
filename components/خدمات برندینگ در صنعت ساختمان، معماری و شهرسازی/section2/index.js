@@ -100,7 +100,7 @@ const SectionTwo = () => {
 			<div className='containerM'>
 				<div className='pattern'>
 					<Image src={pattern1} />
-					<span style={{ textAlignLast: "justify" }}>
+					<span style={{ textAlignLast: "justify" , display:"block"}}>
 						<Link className='a' href='#' style={{ color: "black" }}>
 							اجرای صفر تا صد فرآیند برندینگ
 						</Link>
@@ -179,30 +179,32 @@ const SectionTwo = () => {
 					display: none;
 				}
 				.containerM {
-					display: grid;
-					row-gap: 100px;
-					white-space: nowrap;
-					padding-right: 20px; 
+					display: flex;
+    				row-gap: 100px;
+   					white-space: nowrap;
+    				flex-direction: column;
+    				flex-wrap: nowrap;
+    				align-items: center;	 
 				}
 				.a {
 					text-decoration: none;
 					font-weight: bold;
-					font-size: 21px;
+					font-size: 20px;
 				}
 				img {
 					margin-bottom: 15px;
 				}
-				@media screen and (min-width: 320px) {
-					.a{
-					font-size:24px
-					}
-				}
+				// @media screen and (min-width: 320px) {
+				// 	.a{
+				// 	font-size:24px
+				// 	}
+				// }
 			@media screen and (min-width: 390px) {
 				.pattern{
 					width:85%
 				}
 				.a{
-					font-size:30px
+					font-size:24px
 				}
 			}
 
