@@ -88,7 +88,7 @@ export default function SectionThree() {
 						/>
 					</div>
 					<div className='boldText'>
-						<Link href={"#"}>
+						<Link href={"/section3Pages/IntegratedComponents"}>
 							<Image src={اجرا} style={{ height: "220%" }} />
 						</Link>
 					</div>

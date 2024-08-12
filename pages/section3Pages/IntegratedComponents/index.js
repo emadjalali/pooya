@@ -1,35 +1,44 @@
-import picture from "./RouteDesign.jpg"
+import picture from "./اجرای-یکپارچه-برند.jpg"
 import pattern from "./pattern.svg"
 import Image from "next/image"
-import NestedLayout from "@/components/nested-layout-fr"
 import Layout from "@/components/Layout"
+import NestedLayout from "@/components/nested-layout-fr"
 
-export default function RouteDessign(){
+export default function IntegratedComponents(){
     return(
         <div>
             {/* <div className="">
                 
             </div> */}
             <div className="firstPart">
-                <h1 className="title">طراحی مسیر رشد برند<br/>(استراتزی های برندینگ و بازاریابی)</h1>
+                <h1 className="title">اجرای یکپارچه فرایند برندینگ</h1>
                 <Image src={picture} className="picture"></Image>
             </div>
             <div className="secondPart" style={{direction:"rtl"}}>
                 <div className="POne">
-                    <p>برندی که خلق شده است. نیازمند مسیر و شیوه ای برای رشد و ارتباط با جهان پیرامون و مخاطبینش است. مسیری منطبق بر اصالت طراحی شده برند که با راهکار ها و جزئیاتی دقیق ، چیستی و چرایی ارزشمندش را در ذهن و قلب مخاطبان ثبت میکند. اینکه هرکجا چگونه حضور داشته باشد و چگونه تعامل کند تا در ذهن و قلب مخاطبانش رسوخ کند. چیزی است که تحت عنوان استراتژی های برندینگ و بازاریابی در این مرحله به صورت اختصاصی توسط کارگروه استراتژی هاب برندینگ و بازاریابی طراحی میشود.</p>    
+                    <p style={{marginBottom:"30px"}}>اگر کشف کردهایم که ما (کسب و کارمان) در این جهان (بازار امروز) چیستیم، برای چه هستیم و چگونه بودنمان معنی پیدا میکند، اکنون وقت زندگی است! وقت حضور و نمایشی تمام قد یا همان «اجرایی یکپارچه برندینگ»؛</p>
+                    <p>اجرای فرآیند برندینگ، به زیست منحصر به فرد و سعادتمندی برند می پردازد؛ به پیاده سازی دقیق استراتژی ها، راهکارها و فعالیت های طراحی شده.</p>
                 </div>
-                <div className="PTwo">
-                   <p>طراحی و تشریح استراتژی کلان کسب و کار</p> 
-                   <p>تدوین نقشه راه کلان کسب و کار</p> 
-                   <p>طراحی راهکارهای اختصاصی برندینگ و بازاریابی</p> 
-                   <p>طراحی کمپین های خلاق تبلیغاتی</p> 
-                   <p>تدوین باید و نباید های برند</p> 
-                   <p>طراحی استراتژی محتوا در فضای مجازی</p> 
-                   <p>طراحی ساحتار فروش و بازاریابی در سازمان ها</p> 
-                   <p>طراحی سناریو های معرفی برند، رائه، فروش و...</p> 
+                <div className="PThree">
+                    <p>گروه های اجرایی حس یک نگاه و شرکت های همکار در این بخش، اطمینان حاصل میکنند که مخاطبان هدف، همان مفاهیمی را برداشت میکنند که بیشتر به عنوان استراتژی برند طراحی شده بود، چرا که هدف غایی برندینگ، انطباق آنچه شما به آن باور دارید با آنچه مخاطب شما از شما باور دارد، است و تنها در این حالت است که برند به معنای واقعی محقق می شود. ما این کار را به روش های مختلف پیاده و آن را دائما ارزیابی می کنیم:</p>
                 </div>
+                <div className="PTwo"> 
+                   <p>طراحی نقاط ارتباطی برند</p> 
+                   <p>تولید محتوای تخصصی</p> 
+                   <p>طراحی و مدیریت وبسایت</p> 
+                   <p>مدیریت شبکه های اجتماعی</p> 
+                   <p>طراحی و اجرای کمپین های برندینگ و بازاریابی</p> 
+                   <p>خرید و مدیریت رسانه</p> 
+                   <p>دیجیتال مارکتینگ</p> 
+                   <p>طراحی و برگزاری رویدادهای اختصاصی</p> 
+                   <p>آموزش منابع انسانی</p> 
+                   <p>طراحی اقلام تبلیغاتی برند</p> 
+                   <p>فعالیت های ارتباطات یکپارجه برند</p> 
+                   <p>مشارکت در خلق فضا و ساختمان های ماندگار تحت نام برند</p> 
+                </div>
+
                 <div className="pattern">
-                    <Image src={pattern} style={{width:"5%"}}></Image>
+                    <Image src={pattern} style={{width:"85%"}}></Image>
                 </div>
             </div>
             <div className="positionButtoms">
@@ -44,10 +53,9 @@ export default function RouteDessign(){
                 </div>
             </div><style>{`
                 .title{
-                    margin-top: 80px;
+                    margin-top:15%;
                     margin-bottom: 80px;
-                    width: 75%;
-                    // text-align: end;
+                    width: 80%;
                 }
                 .buttomOne{
                     background-color: #939191;
@@ -82,7 +90,7 @@ export default function RouteDessign(){
                     flex-direction: column;
                     flex-wrap: nowrap;
                     align-items: center;
-                    margin-bottom:20%;
+                    margin-bottom: 20%;
                 }
                 .firstPart{
                     display: flex;
@@ -98,13 +106,13 @@ export default function RouteDessign(){
                 }
                 .POne{
                     margin-top: 60px;
-                    font-size: 25px;
-                    width: 75%;
+                    font-size: 22px;
+                    width: 80%;
                 }
                 .PTwo{
                     width: 75%;
-                    font-size: 18px;
-                    font-weight: 900;
+                    font-size: 25px;
+                    font-weight: 700;
                     margin-top: 40px;
                     color: orange;
                 }
@@ -112,13 +120,14 @@ export default function RouteDessign(){
                     margin-bottom: 0px;
                 }
                 .PThree{
-                    font-size: 25px;
+                    font-size: 28px;
                     font-weight: 700;
                     width: 75%;
                     margin-top: 50px;
                 }
+
                 .pattern{
-                    width: 75%;
+                    width: 100%;
                     margin-bottom: 60px;
                     margin-top: 14%;
                     display: flex;
@@ -132,29 +141,24 @@ export default function RouteDessign(){
                     font-size:24px;
                     color:black
                 }
-                @media screen and (min-width: 500px) {
-                    .PTwo{
-                        font-size: 22px; 
-                    }
-                }
-                @media screen and (min-width: 600px) {
-                    .PTwo{
-                        font-size: 25px; 
-                    }
-                }
                 @media screen and (min-width: 768px) {
                     .picture{
-                        width: 80%;  
+                        width: 85%;  
                     }  
+                    .PThree{
+                        font-size: 23px;
+                        width: 85%;
+                        font-weight: 800;
+                    }
                     .POne{
-                        font-size: 19px;
-                        width: 90%;
+                        font-size: 18px;
+                        width: 85%;
                     }
                     .PTwo{
                         font-weight: 400;
                         color: #ffb733;
-                        width: 90%;
-                        font-size: 17px;
+                        width: 85%;
+                        font-size: 22px;
                     }
                     .Ptitle{
                         font-weight: 400;
@@ -162,7 +166,8 @@ export default function RouteDessign(){
                         font-size: 18px; 
                     }
                     .pattern{
-                        margin-top: 5%;
+                        margin-top: 10%;
+                        margin-bottom: 5%;
                     }
                     .positionButtoms {
                         display: flex;
@@ -170,7 +175,7 @@ export default function RouteDessign(){
                         flex-wrap: nowrap;
                         align-items: flex-end;
                         justify-content: space-around;
-                        margin-bottom: -85px;
+                        margin-bottom:-5%;
                     }
                     .buttomTwo{background-color: #939191;}
                     .buttomThree{background-color: #939191;}
@@ -180,10 +185,18 @@ export default function RouteDessign(){
     )
 }
 
-RouteDessign.getLayout = function getLayout(page){
+IntegratedComponents.getLayout = function getLayout(page){
     return(
         <Layout>
             <NestedLayout>{page}</NestedLayout>
-        </Layout> 
+        </Layout>
     )
 }
+
+// BrandDiscovery.getLayout = function getLayout(page) {
+// 	return (
+// 		<Layout>
+// 			<NestedLayout>{page}</NestedLayout>
+// 		</Layout>
+// 	);
+// };
