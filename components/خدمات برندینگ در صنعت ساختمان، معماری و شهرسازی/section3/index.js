@@ -43,7 +43,7 @@ export default function SectionThree() {
 						<Image src={lineTwo} style={{ width: "30px" }} />
 					</div>
 					<div className='boldText'>
-						<Link href={"/section3Pages/BrandDiscovery"}>
+						<Link href={"/home-fr/section3Pages/BrandDiscovery"}>
 							<Image src={کشف} style={{ height: "220%" }} />
 						</Link>
 					</div>
@@ -57,7 +57,7 @@ export default function SectionThree() {
 						/>
 					</div>
 					<div className='boldText'>
-						<Link href={"/section3Pages/BrandCreation"}>
+						<Link href={"/home-fr/section3Pages/BrandCreation"}>
 							<Image src={خلق} style={{ height: "220%" }} />
 						</Link>
 					</div>
@@ -71,7 +71,7 @@ export default function SectionThree() {
 						<Image src={lineTwo} />
 					</div>
 					<div className='boldText'>
-						<Link href={"/section3Pages/RouteDesign"}>
+						<Link href={"/home-fr/section3Pages/RouteDesign"}>
 							<Image src={مسیر} style={{ height: "220%" }} />
 						</Link>
 					</div>
@@ -88,7 +88,7 @@ export default function SectionThree() {
 						/>
 					</div>
 					<div className='boldText'>
-						<Link href={"/section3Pages/IntegratedComponents"}>
+						<Link href={"/home-fr/section3Pages/IntegratedComponents"}>
 							<Image src={اجرا} style={{ height: "220%" }} />
 						</Link>
 					</div>

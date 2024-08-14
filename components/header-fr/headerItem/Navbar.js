@@ -51,7 +51,7 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"#"}>
+						href={"/branding-of-space"}>
 						{" "}
 						<p className="ph">برندینگ فضا</p>
 					</Link>
