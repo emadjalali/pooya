@@ -130,7 +130,7 @@ const SectionTwo = () => {
 				</div>
 				<div className='pattern'>
 					<Image src={pattern3} />
-					<Link className='a' href='#' style={{ color: "black" }}>
+					<Link className='a' href={"section2Pages/BrandBook"} style={{ color: "black" }}>
 						سند اختصاصی راهنمای جامع برند
 					</Link>
 				</div>
