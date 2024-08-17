@@ -1,34 +1,34 @@
-import picture from "./کشف-برند.jpg"
+import pictureM from "./راه-کارهای-خلاق.jpg"
+import pictureD from "./راه-کارهای-خلاق-D.jpg"
 import pattern from "./pattern.svg"
 import Image from "next/image"
 import Layout from "@/components/Layout"
 import NestedLayout from "@/components/nested-layout-fr"
 
-export default function BrandDiscovery(){
+export default function creativeSolution(){
     return(
         <div>
             {/* <div className="">
                 
             </div> */}
             <div className="firstPart">
-                <h1 className="title">کشف برند</h1>
-                <Image src={picture} className="picture"></Image>
+                <h1 className="title">راهکارهای خلاق حس یک نگاه</h1>
+                <div className="pictureM">
+                    <Image src={pictureM} style={{width:"100%"}}></Image>
+                </div>
+                <div className="pictureD">
+                    <Image src={pictureD} style={{width:"35%"}}></Image>
+                    <Image src={pattern} style={{width:"32%"}}></Image>
+                </div>
             </div>
             <div className="secondPart" style={{direction:"rtl"}}>
                 <div className="POne">
-                    <p>در حس یک نگاه، پیش از هر چیز به شیوه ای ساختارمند (و البته چالش بر انگیز) به شناخت انسان با یک سازمان می پردازیم، به این شناخت عمق می دهیم سپس از دل آن مفاهیمی منحصر به فرد استخراج میکنیم؛ مفاهیمی که فلسفه ی وجودی برند یک فرد یا یک سازمان را شکل می دهند</p>
+                   <p className="pD">راهکار به ایده یا مجموعه ایده هایی گفته می شود که برای پاسخگویی به چالش یا دستیابی به اهدافی مشخص طراحی و ارائه می شود.</p>
+                   <p>خلاقیت نیز بیشتر از متفاوت بودن یا خاص بودن، نوعی نگرش است، نگرشی هوشمند که هرچه در نتیجه ی آن عمیق می شویم، جذابیت و اثربخشی اش را بیشتر درک میکنیم</p>
                 </div>
                 <div className="PTwo">
-                   <p className="Ptitle">در مرحله کشف برند ، از این سه ابزار استفاده می شود:</p> 
-                   <p>پرسشنامه اخنصاصی حس یک نگاه برای کشف برند</p> 
-                   <p>ازمون های استاندارد روانشناسی برند</p> 
-                   <p>جلسه های حضوری/آنلان باکارگروه استراتزی یرند</p> 
-                </div>
-                <div className="PThree">
-                    <p>  کشف برند یا  Brand Discovery، در واقع به چرایی منحصر به فرد یک فرد یا سازمان می پردازد و مهمترین دستاورد برای شروع طراحی استراتزی بزند (یا همان چیستی برند) به حساب می اید </p>
-                </div>
-                <div className="pattern">
-                    <Image src={pattern} style={{width:"4%"}}></Image>
+                    <p style={{marginBottom:"30px"}}>ما در حس یک نگاه، راهکارهای خلاق ارائه می کنیم. به صورت اختصاصی برای هر برند. ویژه ی برندهای علاقه مند به ارزش آفرینی و اصالت؛ ویژه ی دسته محدودی از سازندگان، معماران، شرکت های ساختمانی، برندهای تامین کننده و سرمایه گذاران و بهره برداران فضاهای خاص.</p>
+                    <p>راهکارهای خلاق برند با هرگونه هدف و در هر میزان از حضور و نفوذ برند در بازار، قابل طراحی است. راهکار خلاق می تواند شامل ایده ای خلاق برای یک کمپین تبلیغاتی باشد یا یک رویداد ویژه برای مخاطبان خاص و یا تغییراتی در بخشی از کسب و کار و یا طراحی خدمتی هوشمندانه با داستانی جذاب یا ترکیبی از فعالیت های هدفمند و ادامه دار خلاق؛ همگی تقویت کننده و هم راستا با اهداف برندینگ و بازاریابی.</p>
                 </div>
             </div>
             <div className="positionButtoms">
@@ -96,65 +96,55 @@ export default function BrandDiscovery(){
                 }
                 .POne{
                     margin-top: 60px;
-                    font-size: 25px;
+                    font-size: 23px;
                     width: 75%;
-                }
-                .PTwo{
-                    width: 75%;
-                    font-size: 28px;
-                    font-weight: 700;
-                    margin-top: 40px;
-                    color: orange;
+                    font-family: system-ui;
                 }
                 p{
                     margin-bottom: 0px;
                 }
-                .PThree{
-                    font-size: 25px;
+                .PTwo{
+                    font-size: 26px;
                     font-weight: 700;
                     width: 75%;
                     margin-top: 50px;
+                    margin-bottom: 100px;
                 }
-                .pattern{
-                    width: 75%;
-                    margin-bottom: 60px;
-                    margin-top: 14%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                .pictureM{
+                    width: 100%;  
                 }
-                .picture{
-                    width: 75%;  
+                .pictureD{
+                    display:none;  
                 }
-                .Ptitle{
-                    font-size:24px;
-                    color:black
+                .pD{
+                  margin-bottom: 30px;  
                 }
                 @media screen and (min-width: 768px) {
-                    .picture{
-                        width: 30%;  
-                    }  
-                    .PThree{
-                        font-size: 20px;
-                        width: 85%;
+                    .title{
+                        margin-bottom: 50px;
+                        width: 80%;
+                        font-size: 25px;
                     }
-                    .POne{
-                        font-size: 20px;
-                        width: 85%;
+                    .pictureM{
+                        display:none;  
+                    } 
+                    .pictureD{
+                        display: flex;
+                        width: 100%;
+                        flex-direction: row-reverse;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                    } 
+                    .pD{
+                        margin-bottom: 0px;  
                     }
                     .PTwo{
-                        font-weight: 400;
-                        color: #ffb733;
-                        width: 85%;
-                        font-size: 22px;
+                        font-size: 20px;
+                        width: 35%;
                     }
-                    .Ptitle{
-                        font-weight: 400;
-                        color: #ffca69;
-                        font-size: 18px; 
-                    }
-                    .pattern{
-                        margin-top: 15%;
+                    .POne{
+                        font-size: 17px;
+                        width: 35%;
                     }
                     .positionButtoms {
                         display: flex;
@@ -171,7 +161,7 @@ export default function BrandDiscovery(){
     )
 }
 
-BrandDiscovery.getLayout = function getLayout(page){
+creativeSolution.getLayout = function getLayout(page){
     return(
         <Layout>
             <NestedLayout>{page}</NestedLayout>
@@ -179,10 +169,3 @@ BrandDiscovery.getLayout = function getLayout(page){
     )
 }
 
-// BrandDiscovery.getLayout = function getLayout(page) {
-// 	return (
-// 		<Layout>
-// 			<NestedLayout>{page}</NestedLayout>
-// 		</Layout>
-// 	);
-// };
