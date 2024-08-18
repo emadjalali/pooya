@@ -22,8 +22,8 @@ const SectionTwo = () => {
 				<div className='patternOne'>
 					<Image src={pattern2} />
 					<div>
-						<Link className="a" href={{}} style={{ color: "black" , display:"block" , textAlignLast:"justify"}}>تولید محتوای تخصصی و اختصاصی</Link>
-						<Link className="a" href={{}} style={{ color: "black" }}>در صنعت و ساختمان سازی</Link>
+						<Link className="a" href={"home-fr/section2Pages/ContentProduction"} style={{ color: "black" , display:"block" , textAlignLast:"justify"}}>تولید محتوای تخصصی و اختصاصی</Link>
+						<Link className="a" href={"home-fr/section2Pages/ContentProduction"} style={{ color: "black" }}>در صنعت و ساختمان سازی</Link>
 					</div>
 				</div>
 				<div
@@ -109,8 +109,8 @@ const SectionTwo = () => {
 							تولید محتوای تخصصی و اختصاصی <br />
 							<span className="lineSpace">در صنعت و ساختمان سازی</span>
 						</Link> */}
-						<Link className="a" href={{}} style={{ color: "black" , display:"block" , textAlignLast:"justify"}}>تولید محتوای تخصصی و اختصاصی</Link>
-						<Link className="a" href={{}} style={{ color: "black" }}>در صنعت و ساختمان سازی</Link>
+						<Link className="a" href={"home-fr/section2Pages/ContentProduction"} style={{ color: "black" , display:"block" , textAlignLast:"justify"}}>تولید محتوای تخصصی و اختصاصی</Link>
+						<Link className="a" href={"home-fr/section2Pages/ContentProduction"} style={{ color: "black" }}>در صنعت و ساختمان سازی</Link>
 					</div>
 				</div>
 				<div className='pattern' style={{justifySelf:"baseline"}}>
