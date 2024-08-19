@@ -65,7 +65,7 @@ const SectionTwo = () => {
 
 				<div className='patternSeven'>
 					<Image src={pattern8}/>
-					<Link className='a' href='#' style={{ color: "black" }}>
+					<Link className='a' href={"home-fr/section2Pages/Complication"} style={{ color: "black" }}>
 						عارضه یابی برند{" "}
 					</Link>
 				</div>
