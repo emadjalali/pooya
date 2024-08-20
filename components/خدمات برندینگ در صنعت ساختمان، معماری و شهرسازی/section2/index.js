@@ -39,7 +39,7 @@ const SectionTwo = () => {
 				<div className='patternFour'>
 					<Image src={pattern5} />
 					<div style={{ textAlignLast: "justify" }}>
-						<Link className='a' href='#' style={{ color: "black" }}>
+						<Link className='a' href={"/home-fr/section2Pages/CreateProject"} style={{ color: "black" }}>
 							<span style={{}}>همکاری با سازندگان و سرمایه گذاران</span>
 							<br />
 							برای خلق پروژه‌های ماندگار
@@ -151,7 +151,7 @@ const SectionTwo = () => {
 
 				<div className='pattern' style={{ textAlign: "center" }}>
 					<Image src={pattern8}/>
-					<Link className='a' href='#' style={{ color: "black" }}>
+					<Link className='a' href={"home-fr/section2Pages/Complication"} style={{ color: "black" }}>
 						عارضه یابی برند{" "}
 					</Link>
 				</div>
@@ -159,7 +159,7 @@ const SectionTwo = () => {
 				<div className='pattern'>
 					<Image src={pattern5} />
 					<div style={{ textAlignLast: "justify" }}>
-						<Link className='a' href='#' style={{ color: "black" }}>
+						<Link className='a' href={"/home-fr/section2Pages/CreateProject"} style={{ color: "black" }}>
 							<span style={{}}>همکاری با سازندگان و سرمایه گذاران</span>
 							<br />
 							برای خلق پروژه‌های ماندگار
