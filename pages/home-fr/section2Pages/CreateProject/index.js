@@ -1,5 +1,5 @@
 import picture from "./خلق-پروژه-ماندگار.jpg"
-// import pattern from "./pattern.svg"
+import pattern from "./pattern.svg"
 import Image from "next/image"
 import Layout from "@/components/Layout"
 import NestedLayout from "@/components/nested-layout-fr"
@@ -13,6 +13,9 @@ export default function CreateProject(){
     return(
         <div>
             <div className="firstPart">
+                <div className="pattern">
+                    <Image src={pattern} style={{width: "5%"}}></Image>
+                </div>
                 <h1 className="title">خلق پروژه های ماندگار و برندسازی ساختمان,<br/>(طراحی و توسعه معماری با رویکرد یکپارچه ی برند)</h1>
                 <Image className="picture" src={picture}></Image>
             </div>
@@ -69,12 +72,9 @@ export default function CreateProject(){
 					align-items: flex-end;
 					justify-content: center;
 				}
-                // .pattern {
-	            //     display: flex;
-                //     margin-top: 55px;
-                //     justify-content: center;
-                //     margin-bottom: 55px;
-				// }
+                .pattern {
+	                display: none;
+				}
                 .title{
                     margin-top: 50px;
                     margin-bottom: 25px;
@@ -156,7 +156,7 @@ export default function CreateProject(){
                         font-size: 14px;
                     }
                     .title{
-
+                        margin-top:20px;
                         margin-bottom: 18px;
                         width: 60%;
                         font-size: 18px;
@@ -165,10 +165,11 @@ export default function CreateProject(){
                         font-size: 15px;
                         margin-bottom: 0px;
                     }
-                    // .pattern{
-                    // margin-top: 65px;
-                    // margin-bottom: -65px;
-                    // }
+                    .pattern{
+                        display:block;
+                        width: 65%;
+                        margin-top: 3%;
+                    }
                 }
             `}</style>
         </div>

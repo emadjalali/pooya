@@ -82,7 +82,7 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"#"}>
+						href={"/About"}>
 						<p className="ph">درباره حس یک نگاه </p>
 					</Link>
 				</li>
