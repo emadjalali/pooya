@@ -30,10 +30,10 @@ const Nav = () => {
 								برندینگ برای معماران
 							</li>
 							<li className='hover:text-orange-600  branditem  '>
-								برندینگ برای سازندگان
+								<a className="Menu">برندینگ برای سازندگان</a>
 							</li>
 							<li className='hover:text-orange-600  branditem  '>
-								برندینگ برای تامین‌کنندگان
+								<a className="Menu" href={"./home-fr/BrandingServices/Suppliers"}>برندینگ برای تامین‌کنندگان</a>
 							</li>
 							<li className='hover:text-orange-600  branditem  '>
 								رندینگ ساختمان
@@ -136,6 +136,13 @@ const Nav = () => {
 				.branditem {
 					padding-top: 5px;
 					font-size: 15px;
+				}
+				.Menu{
+					color: black;
+    				text-decoration: none;
+				}
+				.Menu:hover{
+					color: #ff5700;
 				}
 			@media screen and (min-width: 330px){
 				.navitem {
