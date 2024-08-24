@@ -27,10 +27,10 @@ const Nav = () => {
 					<div className={`${btnUl ? "navshow" : "navhide"}`}>
 						<ul className="ul">
 							<li className='hover:text-orange-600  branditem '>
-								برندینگ برای معماران
+								<a className="Menu">برندینگ برای معماران</a>
 							</li>
 							<li className='hover:text-orange-600  branditem  '>
-								<a className="Menu">برندینگ برای سازندگان</a>
+								<a className="Menu" href={"./home-fr/BrandingServices/Creators"}>برندینگ برای سازندگان</a>
 							</li>
 							<li className='hover:text-orange-600  branditem  '>
 								<a className="Menu" href={"./home-fr/BrandingServices/Suppliers"}>برندینگ برای تامین‌کنندگان</a>
