@@ -36,10 +36,10 @@ const Nav = () => {
 								<a className="Menu" href={"./home-fr/BrandingServices/Suppliers"}>برندینگ برای تامین‌کنندگان</a>
 							</li>
 							<li className='hover:text-orange-600  branditem  '>
-								رندینگ ساختمان
+								<a className="Menu" href={"./home-fr/BrandingServices/"}>برندینگ ساختمان</a>
 							</li>
 							<li className='hover:text-orange-600  branditem  '>
-								برندینگ شهری
+								<a className="Menu" href={"./home-fr/BrandingServices/City"}>برندینگ شهری</a>
 							</li>
 						</ul>
 					</div>
