@@ -1,6 +1,6 @@
-import pictureM from "./pictureM.jpg"
-import pictureD from "./pictureD.jpg"
+import picture from "./picture.jpg"
 import patternD from "./pattern.svg"
+import patternTwo from "./patternTwo.svg"
 import Image from "next/image"
 import Layout from "@/components/Layout"
 import NestedLayout from "@/components/nested-layout-fr"
@@ -15,12 +15,13 @@ export default function City(){
                 </div>
             <div className="firstPart">
                 <h1 className="title">برندینگ شهری</h1>
-                <div className="pictureM">
+                <Image src={picture} className="picture"></Image>
+                {/* <div className="pictureM">
                     <Image  style={{width:"100%"}} src={pictureM}></Image>
                 </div>
                 <div className="pictureD">
                     <Image src={pictureD}></Image>
-                </div>
+                </div> */}
             </div>
             <div className="secondPart" style={{direction:"rtl"}}>
                 <div className="POne">
@@ -49,6 +50,9 @@ export default function City(){
                     <p>ما برای تامین کنندگانی که به اعتبار، اصالت و ماندگاری خود اهمیت می دهند، به طراحی و پیاده سازی فرآیندی می اندیشیم که علاوه بر سود مادی روزافزون در این بازار و بازار پیش رو، لذت های معنوی بسیاری را برای مدیران و مالکان برند به ارمغان بیاورد.</p>
                 </div> */}
             </div>
+            <div className="patternTwo">
+                <Image src={patternTwo} style={{width:"30%"}}></Image>
+            </div>
             <div className="positionButtoms">
                 <div>
                     <a className="buttomOne" href="#">دریافت مشاوره رایگان</a>
@@ -62,7 +66,6 @@ export default function City(){
             </div><style>{`
                 .title{
                     margin-top: 60px;
-                    margin-bottom: 50px;
                     width: 75%;
                     font-size: 30px;
                 }
@@ -139,17 +142,23 @@ export default function City(){
                     color:black;
                 }
                 p{margin-bottom:0px;}
-                .pictureM{
-                    width: 75%;  
+                .picture{
+                    width: 90%;  
                 }
-                .pictureD{display:none;}
                 .patternOne {
 	                display: none;
+				}
+                .patternTwo {
+	                width: 100%;
+                    margin-bottom: 50px;
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 				}
                 @media screen and (min-width: 768px) {
                     .title{
                         margin-top:0px;
-                        margin-bottom: 50px;
                         width: 80%;
                         font-size: 27px;
                     }
@@ -165,13 +174,11 @@ export default function City(){
                         margin-top: 60px;
                         margin-bottom: 10px;
                     }
-                    .pictureM{display:none;} 
-                    .pictureD{
-                        display: flex;
-                        width: 55%;
-                        // flex-wrap: nowrap;
-                        // flex-direction: row-reverse;
-                        // align-items: stretch;
+                    .picture{
+                        width: 70%;
+                    }
+                    .patternTwo {
+                        display: none;
                     } 
                     .pD{
                         font-size: 17px;
@@ -191,17 +198,11 @@ export default function City(){
                         width: 80%;
                         margin-bottom: 50px;
                     }
-                    }
                     .FirstLine{
                         font-size:20px;
                         color: #2687a9;
                         font-family: system-ui;
                     }
-                    // .PFour{
-                    //     font-size: 17px;
-                    //     width: 80%;
-                    //     font-family: '__myFont_c3a675';
-                    // }
                     .positionButtoms {
                         display: flex;
                         flex-direction: row-reverse;
