@@ -17,7 +17,7 @@ const Nav = () => {
 					// onClick={() => setExpand((prev) => !prev)}
 					className='navitem'>
 					<div style={{position:"relative"}}>
-						<div className="firstNI"  className={`${btnUl ? "firstNIshow" : "firstNIhide"}`}><p >خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</p></div>
+						<div className="firstNI"  ><a href={"/home-fr"}   className={`${btnUl ? "firstNIshow" : "firstNIhide"}`} style={{textDecoration:"none"}}><p >خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</p></a></div>
 						<div className="secondBtn">
 						<i onClick={clickHandler}>
 							{btnUl == false ? (<IoIosArrowDown style={{width:"20px"}}/>) : (<IoIosArrowUp style={{ color: "orange" , width:"20px"}} />)}
@@ -72,7 +72,7 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"#"}>
+						href={"/ContactUs"}>
 						<p className="ph">dycaba</p>
 					</Link>
 				</li>
@@ -138,7 +138,7 @@ const Nav = () => {
 					font-size: 15px;
 				}
 				.Menu{
-					color: black;
+					color: white;
     				text-decoration: none;
 				}
 				.Menu:hover{
@@ -186,6 +186,9 @@ const Nav = () => {
 				}
 				.HVR:hover{
 					background-color: #ff8100;
+				}
+				.Menu{
+					color:black
 				}
 				.ul{
 					padding-right: 30px;
