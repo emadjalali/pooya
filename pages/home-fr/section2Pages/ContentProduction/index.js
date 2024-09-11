@@ -23,7 +23,7 @@ export default function ContentProduction(){
                     <Image src={patternTwoD} style={{width:"30%"}}></Image>
                 </div>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "30px"}}>
                 <div className="POne">
                    <p>در برندسازی، تنها یک تعریف برای محتوای خوب وجود دارد؛ محتوای خوب، محتوایی است که ازطرفی بیانگر جایگاه منحصر به فرد، هویت و ارزش های برنامه ریزی شده برند باشد و از طرفی دیگر مخاطب برند، با آن ارتباطی عمیق برقرار کند.</p>
                 </div>
@@ -55,7 +55,7 @@ export default function ContentProduction(){
                 <div>
                     <a className="buttomThree"  href="#">نمونه پروژه ها</a>
                 </div>
-            </div><style>{`
+            </div><style jsx>{`
                 .title{
                     margin-top: 60px;
                     margin-bottom: 50px;
@@ -131,7 +131,7 @@ export default function ContentProduction(){
                     width: 75%;
                     color: gray;
                 }
-                p{margin-bottom:0px;}
+                
                 .pictureM{
                     width: 100%;  
                 }

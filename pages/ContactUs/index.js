@@ -63,12 +63,12 @@ export default function ContactUs(){
                         <div className="NumDivs">
                             <div className="NumEn">
                                 <p style={{paddingLeft:"7px", marginRight:"-20px" , direction:"ltr" , fontSize:"20px"}}>021-22 72 4059</p>
-                                <Image style={{width:"%"}} src={phone}></Image>
+                                <Image style={{width:"25px"}} src={phone}></Image>
                             </div>
                             <div className="NumFr">
                                 <p style={{paddingLeft:"10px" , direction:"ltr" , fontSize:"20px"}}>0936 128 34 61</p>
-                                <Image style={{width:"%" , marginLeft:"1px"}} src={tel}></Image>
-                                <Image style={{width:"%"}} src={WU}></Image>
+                                <Image style={{width:"25px" , marginLeft:"1px"}} src={tel}></Image>
+                                <Image style={{width:"25px"}} src={WU}></Image>
                             </div>
                         </div>
                         <div className="Address">
@@ -77,12 +77,12 @@ export default function ContactUs(){
                         <div className="IconDives">
                             <div className="email">
                                 <p style={{fontSize:"17px" , marginLeft:"5px"}}>info@feelingofalook.com</p>
-                                <Image style={{width:"%"}} src={email}></Image>
+                                <Image style={{width:"25px"}} src={email}></Image>
                             </div>
                             <div className="Icons">
-                                <Image style={{width:"%" , marginLeft:"5px"}} src={X}></Image>
-                                <Image style={{width:"%" , marginLeft:"5px"}} src={In}></Image>
-                                <Image style={{width:"%" , marginLeft:"5px"}} src={Insta}></Image>
+                                <Image style={{width:"25px" , marginLeft:"5px"}} src={X}></Image>
+                                <Image style={{width:"25px" , marginLeft:"5px"}} src={In}></Image>
+                                <Image style={{width:"25px" , marginLeft:"5px"}} src={Insta}></Image>
                             </div>
                         </div>
                     </div>

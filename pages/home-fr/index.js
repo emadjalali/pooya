@@ -73,7 +73,7 @@ export default function HomeFr() {
 				.firstsectionSubHead {
 				}
 				.secondSection {
-					display: ruby-text;
+
 					padding-top: 10%;
 					padding-bottom: 10%;
 					position: relative;

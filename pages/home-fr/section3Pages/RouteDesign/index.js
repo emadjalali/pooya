@@ -14,7 +14,7 @@ export default function RouteDessign(){
                 <h1 className="title">طراحی مسیر رشد برند<br/>(استراتزی های برندینگ و بازاریابی)</h1>
                 <Image src={picture} className="picture"></Image>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "26px"}}>
                 <div className="POne">
                     <p>برندی که خلق شده است. نیازمند مسیر و شیوه ای برای رشد و ارتباط با جهان پیرامون و مخاطبینش است. مسیری منطبق بر اصالت طراحی شده برند که با راهکار ها و جزئیاتی دقیق ، چیستی و چرایی ارزشمندش را در ذهن و قلب مخاطبان ثبت میکند. اینکه هرکجا چگونه حضور داشته باشد و چگونه تعامل کند تا در ذهن و قلب مخاطبانش رسوخ کند. چیزی است که تحت عنوان استراتژی های برندینگ و بازاریابی در این مرحله به صورت اختصاصی توسط کارگروه استراتژی هاب برندینگ و بازاریابی طراحی میشود.</p>    
                 </div>
@@ -42,7 +42,7 @@ export default function RouteDessign(){
                 <div>
                     <a className="buttomThree"  href="#">نمونه پروژه ها</a>
                 </div>
-            </div><style>{`
+            </div><style jsx>{`
                 .title{
                     margin-top: 80px;
                     margin-bottom: 80px;
@@ -108,9 +108,7 @@ export default function RouteDessign(){
                     margin-top: 40px;
                     color: orange;
                 }
-                p{
-                    margin-bottom: 0px;
-                }
+
                 .PThree{
                     font-size: 25px;
                     font-weight: 700;

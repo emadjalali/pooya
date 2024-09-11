@@ -95,15 +95,15 @@ const SectionTwo = () => {
 			</div>
 			<div className='containerM'>
 				<div className='pattern'>
-					<Image src={pattern1} />
-					<span style={{ textAlignLast: "justify" , display:"block"}}>
+					<Image src={pattern1} style={{margin:"auto"}}/>
+					<span style={{  display:"block"}}>
 						<Link className='a' href='#' style={{ color: "black" }}>
 							اجرای صفر تا صد فرآیند برندینگ
 						</Link>
 					</span>
 				</div>
 				<div className='pattern'>
-					<Image src={pattern2} />
+					<Image src={pattern2} style={{margin:"auto"}} />
 					<div>
 						{/* <Link className='a' href='#' style={{ color: "black" }}>
 							تولید محتوای تخصصی و اختصاصی <br />
@@ -114,8 +114,8 @@ const SectionTwo = () => {
 					</div>
 				</div>
 				<div className='pattern' style={{justifySelf:"baseline"}}>
-					<Image src={pattern4} />
-					<div style={{ textAlignLast: "justify" }}>
+					<Image src={pattern4} style={{margin:"auto"}} />
+					<div style={{}}>
 						<Link
 							className='a'
 							href='#'
@@ -125,15 +125,15 @@ const SectionTwo = () => {
 					</div>
 				</div>
 				<div className='pattern'>
-					<Image src={pattern3} />
-					<Link className='a' href={"section2Pages/BrandBook"} style={{ color: "black" }}>
+					<Image src={pattern3} style={{margin:"auto"}} />
+					<Link className='a' href={"/home-fr/section2Pages/BrandBook"} style={{ color: "black" }}>
 						سند اختصاصی راهنمای جامع برند
 					</Link>
 				</div>
 
 				<div className='pattern' style={{justifySelf:"baseline"}}>
-					<Image src={pattern6} />
-					<div style={{ textAlignLast: "justify" }}>
+					<Image src={pattern6} style={{margin:"auto"}} />
+					<div style={{}}>
 						<Link className='a'  href={"/home-fr/section2Pages/creativeSolution"} style={{ color: "black" }}>
 							راهکارهای خلاق حس یک نگاه
 						</Link>
@@ -141,7 +141,7 @@ const SectionTwo = () => {
 				</div>
 
 				<div className='pattern'>
-					<Image src={pattern7} />
+					<Image src={pattern7} style={{margin:"auto"}} />
 					<div style={{ textAlign: "center" }}>
 						<Link className='a' href='#' style={{ color: "black" }}>
 							طراحی تجربه
@@ -150,15 +150,15 @@ const SectionTwo = () => {
 				</div>
 
 				<div className='pattern' style={{ textAlign: "center" }}>
-					<Image src={pattern8}/>
+					<Image src={pattern8} style={{margin:"auto"}}/>
 					<Link className='a' href={"home-fr/section2Pages/Complication"} style={{ color: "black" }}>
 						عارضه یابی برند{" "}
 					</Link>
 				</div>
 
 				<div className='pattern'>
-					<Image src={pattern5} />
-					<div style={{ textAlignLast: "justify" }}>
+					<Image src={pattern5} style={{margin:"auto"}} />
+					<div style={{}}>
 						<Link className='a' href={"/home-fr/section2Pages/CreateProject"} style={{ color: "black" }}>
 							<span style={{}}>همکاری با سازندگان و سرمایه گذاران</span>
 							<br />
@@ -186,10 +186,11 @@ const SectionTwo = () => {
 					text-decoration: none;
 					font-weight: bold;
 					font-size: 20px;
+					margin:auto;
 				}
-				img {
-					margin-bottom: 15px;
-				}
+				// img {
+				// 	margin-bottom: 15px;
+				// }
 				// @media screen and (min-width: 320px) {
 				// 	.a{
 				// 	font-size:24px

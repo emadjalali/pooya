@@ -145,7 +145,7 @@ export default function Footer() {
 				}
 				.pLeft {
 					text-align: end;
-					margin-right: 2px;
+					margin-right: 20px;
 					font-size: 12px;
 				}
 				.logo {
@@ -158,7 +158,7 @@ export default function Footer() {
 					flex-wrap: nowrap;
 					justify-content: center;
 					flex-direction: row-reverse;
-					margin-top: 5px;
+					margin-top: 15px;
 				}
 				.socialAndAddMain {
 					color: gray;

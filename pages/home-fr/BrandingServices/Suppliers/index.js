@@ -22,7 +22,7 @@ export default function Suppliers(){
                     <Image src={pictureD}></Image>
                 </div>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "30px"}}>
                 <div className="POne">
                     <p className="PD">آنچه کمک میکند یک ساختمان،«ساختمان» شود، متریال، تکنولوژی، خدمات زیرمجموعه معماری و ساخت و ساز است. اما آنچه بستر این نقش آفزینی را برای یک متریال یا تکنولوژی، ساختمانی فراهم می کند، مجموعه ویژگی هایی منطقی-احساسی و مشهود-نامشهود است که برند نامیده می شود!</p>
                    <p>برند با تعریف اصولی آن، چیزی فراتر از لوگو، تبلیغات دهان پرکن یا حتی کیفیت محصولات و خدمات یک تامین کننده در صنعت ساختمان و معماری است. ما در حس یک نگاه به صورت تخصصی به طراحی، توسعه و اجرای فرآیند برندسازی ویژه تامین کنندگان متریال و خدمات زیرمجموعه صنعت ساخت و ساز می پردازیم.</p>
@@ -49,7 +49,7 @@ export default function Suppliers(){
                 <div>
                     <a className="buttomThree"  href="#">نمونه پروژه ها</a>
                 </div>
-            </div><style>{`
+            </div><style jsx>{`
                 .title{
                     margin-top: 60px;
                     margin-bottom: 50px;
@@ -106,12 +106,12 @@ export default function Suppliers(){
                 }
                 .POne{
                     margin-top: 60px;
-                    font-size: 23px;
+                    font-size: 25px;
                     width: 75%;
                     font-family: system-ui;
                 }
                 .PTwo{
-                    font-size: 26px;
+                    font-size: 29px;
                     font-weight: 700;
                     width: 75%;
                     margin-top: 50px;
@@ -127,12 +127,11 @@ export default function Suppliers(){
                 }
                 .PFour{
                     margin-top: 30px;
-                    font-size: 23px;
+                    font-size: 25px;
                     width: 75%;
                     font-family: system-ui;
                     margin-bottom: 80px;
                 }
-                p{margin-bottom:0px;}
                 .pictureM{
                     width: 100%;  
                 }

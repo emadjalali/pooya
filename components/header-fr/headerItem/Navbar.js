@@ -62,7 +62,7 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"#"}>
+						href={"/ContactUs"}>
 						<p className="ph">مشاوره</p>
 					</Link>
 				</li>
@@ -72,7 +72,7 @@ const Nav = () => {
 							textDecoration: "none",
 							color: "white",
 						}}
-						href={"/ContactUs"}>
+						href={""}>
 						<p className="ph">dycaba</p>
 					</Link>
 				</li>
@@ -131,6 +131,7 @@ const Nav = () => {
     				padding-left: 30px;
     				padding-top: 1px;
     				font-size: 12.5px;
+					min-height: 65px;
 				}
 
 				.branditem {

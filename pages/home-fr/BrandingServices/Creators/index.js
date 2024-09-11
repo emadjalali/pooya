@@ -26,7 +26,7 @@ export default function Creators(){
                     <Image src={pictureD}></Image>
                 </div>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl" , textAlign: "justify", lineHeight: "30px"}}>
                 <div className="POne">
                    <p>حس یک نگاه برای شرکت های ساختمانی، توسعه دهندگان املاک و مستغلات و سازندگانی که کسب و کارشان را فراتر از ساختمان سازی میبینند، برنامه هایی اصولی، نواورانه، اثربخش و مدون طراحی کرده است؛ برای سازندگان یا شرکت های ساختمانی ای که در پی ارزش آفرینی، ماندگاری، منحصر به فرد بودن در کنار منفعت روز افزون مادی و معنوی هستند.</p>
                 </div>
@@ -70,7 +70,7 @@ export default function Creators(){
                 <p className="PD"> برندسازی برای سازندگان در حس یک نگاه به چه کسب و کارهایی پیشنهاد می شود؟</p>
                 <p>آیا برندسازی ساختمان و سازنده آن از هم جداست؟مسیر برندسازی سازنده و ساختمان هایش چگونه انجام می شود؟</p>
             </div>
-            </div><style>{`
+            </div><style jsx>{`
                 .svg{
                   width: 8%;  
                 }
@@ -148,7 +148,7 @@ export default function Creators(){
                     width: 75%;
                     font-family: '__myFont_c3a675';
                 }
-                p{margin-bottom:0px;}
+                
                 .pictureM{
                     width: 75%;  
                 }

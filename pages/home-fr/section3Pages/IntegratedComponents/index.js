@@ -14,7 +14,7 @@ export default function IntegratedComponents(){
                 <h1 className="title">اجرای یکپارچه فرایند برندینگ</h1>
                 <Image src={picture} className="picture"></Image>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "26px"}}>
                 <div className="POne">
                     <p style={{marginBottom:"30px"}}>اگر کشف کردهایم که ما (کسب و کارمان) در این جهان (بازار امروز) چیستیم، برای چه هستیم و چگونه بودنمان معنی پیدا میکند، اکنون وقت زندگی است! وقت حضور و نمایشی تمام قد یا همان «اجرایی یکپارچه برندینگ»؛</p>
                     <p>اجرای فرآیند برندینگ، به زیست منحصر به فرد و سعادتمندی برند می پردازد؛ به پیاده سازی دقیق استراتژی ها، راهکارها و فعالیت های طراحی شده.</p>
@@ -51,7 +51,7 @@ export default function IntegratedComponents(){
                 <div>
                     <a className="buttomThree"  href="#">نمونه پروژه ها</a>
                 </div>
-            </div><style>{`
+            </div><style jsx>{`
                 .title{
                     margin-top:15%;
                     margin-bottom: 80px;
@@ -115,10 +115,10 @@ export default function IntegratedComponents(){
                     font-weight: 700;
                     margin-top: 40px;
                     color: orange;
+                    line-height: 25px;
+
                 }
-                p{
-                    margin-bottom: 0px;
-                }
+
                 .PThree{
                     font-size: 28px;
                     font-weight: 700;

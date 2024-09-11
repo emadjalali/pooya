@@ -23,7 +23,7 @@ export default function City(){
                     <Image src={pictureD}></Image>
                 </div> */}
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "30px"}}>
                 <div className="POne">
                     <p style={{marginBottom:"30px"}}>برند یک شهر ، همه آن چیزی است که شهروندان، ساکنین و مخاطبان شهر از آن در ذهن و قلب خود دارند. اگر مدیر، مسئول شهری یا تصمیم گیرنده شهر یا بخشی از آن هستید، از خود این سوال را بپرسید:</p>
                     <p className="PD">آیا فعالیت هایی که تا کنون در شهر رقم زده اید، موجب شده است که در باور شهروندان یا گردشگران، آن چیزی شکل بگیرد که برایش برنامه ریزی و تلاش کرده اید؟!</p>
@@ -63,7 +63,7 @@ export default function City(){
                 <div>
                     <a className="buttomThree"  href="#">نمونه پروژه ها</a>
                 </div>
-            </div><style>{`
+            </div><style jsx>{`
                 .title{
                     margin-top: 60px;
                     width: 75%;
@@ -141,7 +141,7 @@ export default function City(){
                 .FirstLine{
                     color:black;
                 }
-                p{margin-bottom:0px;}
+
                 .picture{
                     width: 90%;  
                 }

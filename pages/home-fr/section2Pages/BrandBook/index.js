@@ -19,7 +19,7 @@ export default function BrandBook(){
             <div>
                     <Image  className="pattern" src={pattern}></Image>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl" ,textAlign: "justify", lineHeight: "26px"}}>
                 <div className="POneD">
                 <p>شاید مهمترین خدمتی که در حس یک نگاه به آن می پردازیم، پاسخ به این سوال مهم شما باشد : برند من چگونه تعریف می شود و برای تبدیل شدن به جایگاه رویایی اش چه مسیری باید طی کند؟ نگاه را بر آن داشت تا به تدوین سندی فراتر از یک برند بوک بیندیشد و در نهایت آن  را صرفا به سازمانهایی که اصالت و بلند پروازی را در صنعت ساختمان، معماری و شهرسازی برای برندشان در نظر گرفتند، پیشنهاد می کند.</p>
                 </div>
@@ -74,7 +74,7 @@ export default function BrandBook(){
                 <div>
                     <a className="buttomThree"  href="#">نمونه پروژه ها</a>
                 </div>
-            </div><style>{`
+            </div><style jsx global>{`
                 .titleM{
                     margin-top: 80px;
                     margin-bottom: 30px;
@@ -136,7 +136,7 @@ export default function BrandBook(){
                 }
                 .POneM{
                     margin-top: 60px;
-                    font-size: 20px;
+                    font-size: 22px;
                     width: 75%;
                     font-family: system-ui;
                 }
@@ -147,9 +147,10 @@ export default function BrandBook(){
                     margin-top: 40px;
                     color: #f48120;
                     margin-bottom:30px;
+                    line-height: 11px;
                 }
                 p{
-                    margin-bottom: 0px;
+                    // margin-bottom: 0px;
                 }
                 .PThree{
                     font-size: 25px;

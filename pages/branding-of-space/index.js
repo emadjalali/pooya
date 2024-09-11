@@ -10,7 +10,7 @@ export default function BrandCreation(){
             <div className="firstPart">
                 <Image src={picture} className="picture"></Image>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl" , textAlign: "justify"}}>
                 <div className="pOne">
                     <p className="titleD">فضا</p>
                     <p className="titleM">فضا...</p>
@@ -98,22 +98,19 @@ export default function BrandCreation(){
                 }
                 .PTwo{
                     width: 75%;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 600;
                     margin-top: 40px;
                 }
-                p{
-                    margin-bottom: 0px;
-                }
                 .PThree{
                    width: 75%;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 500;
                     margin-top: 40px;
                 }
                 .PFour{
                    width: 75%;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 500;
                     margin-top: 40px;
                 }

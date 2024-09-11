@@ -17,7 +17,7 @@ import زندگی from "./blackPattern3/home-24.svg";
 export default function SectionThree() {
 	return (
 		<div>
-			<div className='pageSize'>
+			<div className='pageSizeThree'>
 				<div
 					className='mycontainer'
 					style={{
@@ -31,7 +31,12 @@ export default function SectionThree() {
 						<h1 className='bigQ'>حس یک نگاه مشخصا به چه می پردازد؟</h1>
 					</div>
 					<div className='lineOne'>
-						<Image src={lineOne} style={{ height: "25px" }} />
+						<Image src={lineOne} style={{
+							    height: "25px",
+								width: "100%",
+								marginTop: "-1%",
+								marginBottom: "-1%",
+						}} />
 					</div>
 					<div className='answer'>
 						<p>
@@ -40,7 +45,12 @@ export default function SectionThree() {
 						</p>
 					</div>
 					<div className='lineTwo'>
-						<Image src={lineTwo} style={{ width: "30px" }} />
+						<Image src={lineTwo} style={{
+								height: "8px",
+								width: "100%",
+								marginTop: "-3%",
+								marginBottom: "-1%",
+						 }} />
 					</div>
 					<div className='boldText'>
 						<Link href={"/home-fr/section3Pages/BrandDiscovery"}>
@@ -53,7 +63,12 @@ export default function SectionThree() {
 					<div className='lineOne'>
 						<Image
 							src={colorLineOne}
-							style={{ height: "25px", marginTop: "5%" }}
+							style={{
+								height: "29px",
+								width: "100%",
+								marginTop: "11%",
+								marginBottom: "7%",
+							}}
 						/>
 					</div>
 					<div className='boldText'>
@@ -68,7 +83,14 @@ export default function SectionThree() {
 						<Image src={هویت_برند} />
 					</div>
 					<div className='lineTwo' style={{ marginTop: "10%" }}>
-						<Image src={lineTwo} />
+						<Image src={lineTwo}
+							   style={{ 
+									height: "8px",
+									width: "100%",
+									marginTop: "12%",
+									marginBottom: "7%",
+								}}
+					/>
 					</div>
 					<div className='boldText'>
 						<Link href={"/home-fr/section3Pages/RouteDesign"}>
@@ -84,7 +106,12 @@ export default function SectionThree() {
 					<div className='lineOne'>
 						<Image
 							src={colorLineOne}
-							style={{ height: "25px", marginTop: "10%" }}
+							style={{ 
+								height: "29px",
+								width: "100%",
+								marginTop: "16%",
+								marginBottom: "5%",
+							}}
 						/>
 					</div>
 					<div className='boldText'>
@@ -98,8 +125,8 @@ export default function SectionThree() {
 				</div>
 			</div>
 			<div />
-			<style jsx>{`
-				.pageSize {
+			<style >{`
+				.pageSizeThree {
 					position: relative;
 					width: 100%;
 					padding-top: 295%;
@@ -119,7 +146,7 @@ export default function SectionThree() {
 					text-align: center;
 				}
 				.lineOne {
-					display: ruby-text;
+					
 					margin-top: 3%;
 					margin-bottom: 3%;
 				}
@@ -129,13 +156,13 @@ export default function SectionThree() {
 					font-weight: 700;
 				}
 				.lineTwo {
-					display: ruby-text;
+					
 					margin-top: 7%;
 					margin-bottom: 4%;
 				}
 				.boldText {
 					width: 18%;
-					margin-right: 42%;
+					margin-right: 40%;
 					margin-top: 0%;
 				}
 				.firstp {
@@ -150,8 +177,8 @@ export default function SectionThree() {
 				}
 				.thirthpp {
 					width: 20%;
-					margin-right: 62%;
-					margin-top: -13%;
+					margin-right: 60%;
+					margin-top: -10%;
 				}
 				.fourth {
 					width: 14%;
@@ -160,8 +187,8 @@ export default function SectionThree() {
 				}
 				.fifth {
 					width: 20%;
-					margin-right: 62%;
-					margin-top: -13%;
+					margin-right: 60%;
+					margin-top: -10%;
 				}
 				.sixth {
 					width: 14%;
@@ -169,7 +196,7 @@ export default function SectionThree() {
 					margin-top: -19%;
 				}
 				@media screen and (min-width: 485px) {
-					.pageSize {
+					.pageSizeThree {
 						padding-top: 270%;
 					}
 				}
@@ -182,7 +209,7 @@ export default function SectionThree() {
 					}
 				}
 				@media screen and (min-width: 768px) {
-					.pageSize {
+					.pageSizeThree {
 						padding-top: 141%;
 					}
 					.mycontainer {
