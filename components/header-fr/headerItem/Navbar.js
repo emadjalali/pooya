@@ -1,93 +1,156 @@
-import Link from "next/link";
-import { useState} from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { IoIosArrowDown } from 'react-icons/io';
+import { IoIosArrowUp } from 'react-icons/io';
 
-const Nav = () => {
-	const [btnUl, setBtnUl] = useState(false);
+const Nav = ({ btnNav, setBtnNav }) => {
+  const [btnUl, setBtnUl] = useState(false);
 
-	const clickHandler = () => {
-		setBtnUl((prove) => !prove);
-	};
-	// const [expand, setExpand] = useState(false);
-	return (
-		<nav className='bg-[#0e0a0a]  w-full absolute left-0 top-[13vh] z-10' style={{direction: ""}}>
-			<ul className='nav px-0'>
-				<li
-					// onClick={() => setExpand((prev) => !prev)}
-					className='navitem'>
-					<div style={{position:"relative"}}>
-						<div className="firstNI"  ><a href={"/home-fr"}   className={`${btnUl ? "firstNIshow" : "firstNIhide"}`} style={{textDecoration:"none"}}><p >خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</p></a></div>
-						<div className="secondBtn">
-						<i onClick={clickHandler}>
-							{btnUl == false ? (<IoIosArrowDown style={{width:"20px"}}/>) : (<IoIosArrowUp style={{ color: "orange" , width:"20px"}} />)}
-						</i>
-						</div>
-					</div>
-					<div className={`${btnUl ? "navshow" : "navhide"}`}>
-						<ul className="ul">
-							<li className='hover:text-orange-600  branditem '>
-								<a className="Menu" href={"./home-fr/BrandingServices/Architects"}>برندینگ برای معماران</a>
-							</li>
-							<li className='hover:text-orange-600  branditem  '>
-								<a className="Menu" href={"./home-fr/BrandingServices/Creators"}>برندینگ برای سازندگان</a>
-							</li>
-							<li className='hover:text-orange-600  branditem  '>
-								<a className="Menu" href={"./home-fr/BrandingServices/Suppliers"}>برندینگ برای تامین‌کنندگان</a>
-							</li>
-							<li className='hover:text-orange-600  branditem  '>
-								<a className="Menu" href={"./home-fr/BrandingServices/"}>برندینگ ساختمان</a>
-							</li>
-							<li className='hover:text-orange-600  branditem  '>
-								<a className="Menu" href={"./home-fr/BrandingServices/City"}>برندینگ شهری</a>
-							</li>
-						</ul>
-					</div>
-					
-				</li>
-				<li className='HVR navitem'>
-					<Link
-						style={{
-							textDecoration: "none",
-							color: "white",
-						}}
-						href={"/branding-of-space"}>
-						{" "}
-						<p className="ph">برندینگ فضا</p>
-					</Link>
-				</li>
-				<li className='HVR navitem'>
-					<Link
-						style={{
-							textDecoration: "none",
-							color: "white",
-						}}
-						href={"#"}>
-						<p className="ph">مشاوره</p>
-					</Link>
-				</li>
-				<li className='HVR  navitem' >
-					<Link
-						style={{
-							textDecoration: "none",
-							color: "white",
-						}}
-						href={"/ContactUs"}>
-						<p className="ph">dycaba</p>
-					</Link>
-				</li>
-				<li className='HVR navitem'>
-					<Link
-						style={{
-							textDecoration: "none",
-							color: "white",
-						}}
-						href={"/About"}>
-						<p className="ph">درباره حس یک نگاه </p>
-					</Link>
-				</li>
-			</ul>
-			<style jsx>{`
+  const clickHandler = () => {
+    setBtnUl((prove) => !prove);
+  };
+  useEffect(() => {
+    if (!btnNav) setBtnUl(false);
+  }, [btnNav]);
+  // const [expand, setExpand] = useState(false);
+  return (
+    <nav className="bg-[#0e0a0a]  w-full absolute left-0 top-[13vh] z-10" style={{ direction: '' }}>
+      <ul className="nav px-0">
+        <li
+          // onClick={() => setExpand((prev) => !prev)}
+          className="navitem"
+        >
+          <div style={{ position: 'relative' }}>
+            <div className="firstNI">
+              <a
+                onClick={clickHandler}
+                className={`${btnUl ? 'firstNIshow' : 'firstNIhide'}`}
+                style={{ textDecoration: 'none' }}
+              >
+                <p>خدمات برندینگ در صنعت ساختمان، معماری و شهرسازی</p>
+              </a>
+            </div>
+            <div className="secondBtn">
+              <i onClick={clickHandler}>
+                {btnUl == false ? (
+                  <IoIosArrowDown style={{ width: '20px' }} />
+                ) : (
+                  <IoIosArrowUp style={{ color: 'orange', width: '20px' }} />
+                )}
+              </i>
+            </div>
+          </div>
+          <div className={`${btnUl ? 'navshow' : 'navhide'}`}>
+            <ul className="ul">
+              <li className="hover:text-orange-600  branditem ">
+                <a
+                  onClick={() => {
+                    clickHandler();
+                    setBtnNav(false);
+                  }}
+                  className="Menu"
+                  href={'/home-fr/BrandingServices/Architects'}
+                >
+                  برندینگ برای معماران
+                </a>
+              </li>
+              <li className="hover:text-orange-600  branditem  ">
+                <a
+                  onClick={() => {
+                    clickHandler();
+                    setBtnNav(false);
+                  }}
+                  className="Menu"
+                  href={'/home-fr/BrandingServices/Creators'}
+                >
+                  برندینگ برای سازندگان
+                </a>
+              </li>
+              <li className="hover:text-orange-600  branditem  ">
+                <a
+                  onClick={() => {
+                    clickHandler();
+                    setBtnNav(false);
+                  }}
+                  className="Menu"
+                  href={'/home-fr/BrandingServices/Suppliers'}
+                >
+                  برندینگ برای تامین‌کنندگان
+                </a>
+              </li>
+              <li className="hover:text-orange-600  branditem  ">
+                <a
+                  onClick={() => {
+                    clickHandler();
+                    setBtnNav(false);
+                  }}
+                  className="Menu"
+                >
+                  برندینگ ساختمان
+                </a>
+              </li>
+              <li className="hover:text-orange-600  branditem  ">
+                <a
+                  onClick={() => {
+                    clickHandler();
+                    setBtnNav(false);
+                  }}
+                  className="Menu"
+                  href={'/home-fr/BrandingServices/City'}
+                >
+                  برندینگ شهری
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li className="HVR navitem">
+          <Link
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            href={'/branding-of-space'}
+          >
+            {' '}
+            <p className="ph">برندینگ فضا</p>
+          </Link>
+        </li>
+        <li className="HVR navitem">
+          <Link
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            href={'#'}
+          >
+            <p className="ph">مشاوره</p>
+          </Link>
+        </li>
+        <li className="HVR  navitem">
+          <Link
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            href={'/ContactUs'}
+          >
+            <p className="ph">dycaba</p>
+          </Link>
+        </li>
+        <li className="HVR navitem">
+          <Link
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            href={'/About'}
+          >
+            <p className="ph">درباره حس یک نگاه </p>
+          </Link>
+        </li>
+      </ul>
+      <style jsx>{`
 				.ph:hover{
 					color:  #ff8100;
 				}
@@ -131,11 +194,14 @@ const Nav = () => {
     				padding-left: 30px;
     				padding-top: 1px;
     				font-size: 12.5px;
+					{/* min-height: 65px; */}
+				
 				}
 
 				.branditem {
 					padding-top: 5px;
 					font-size: 15px;
+					
 				}
 				.Menu{
 					color: white;
@@ -291,8 +357,8 @@ const Nav = () => {
 					}
 				}
 			`}</style>
-		</nav>
-	);
+    </nav>
+  );
 };
 
 export default Nav;
