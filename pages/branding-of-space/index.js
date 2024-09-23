@@ -10,7 +10,7 @@ export default function BrandCreation() {
       <div className="firstPart">
         <Image src={picture} className="picture"></Image>
       </div>
-      <div className="secondPart" style={{ direction: 'rtl' }}>
+      <div className="secondPart" style={{ direction: 'rtl', textAlign: 'justify' }}>
         <div className="pOne">
           <p className="titleD">فضا</p>
           <p className="titleM">فضا...</p>
@@ -78,143 +78,136 @@ export default function BrandCreation() {
           </a>
         </div>
       </div>
-      <style jsx>{`
-        .titleD {
-          display: none;
-        }
-        .buttomOne {
-          background-color: #939191;
-          padding: 9px;
-          color: white;
-          text-decoration: none;
-          width: 161px;
-          display: block;
-        }
-        .buttomTwo {
-          background-color: #a3a2a2;
-          padding: 9px;
-          color: white;
-          text-decoration: none;
-          width: 161px;
-          display: block;
-          text-align: center;
-          margin-top: 13px;
-        }
-        .buttomThree {
-          background-color: black;
-          padding: 9px;
-          color: white;
-          text-decoration: none;
-          width: 161px;
-          display: block;
-          text-align: center;
-          margin-top: 13px;
-        }
-        .positionButtoms {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          align-items: center;
-          margin-bottom: 20%;
-        }
-        .firstPart {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          flex-wrap: nowrap;
-        }
-        .secondPart {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          flex-wrap: nowrap;
-        }
-        .pOne {
-          margin-top: 60px;
-          font-size: 17px;
-          width: 75%;
-        }
-        .PTwo {
-          width: 75%;
-          font-size: 22px;
-          font-weight: 600;
-          margin-top: 40px;
-        }
-        p {
-          {/* margin-bottom: 0px; */}
-        }
-        .PThree {
-          width: 75%;
-          font-size: 22px;
-          font-weight: 500;
-          margin-top: 40px;
-        }
-        .PFour {
-          width: 75%;
-          font-size: 22px;
-          font-weight: 500;
-          margin-top: 40px;
-        }
-        .pattern {
-          width: 100%;
-          margin-bottom: 60px;
-          margin-top: 14%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .picture {
-          width: 100%;
-        }
-        .Ptitle {
-          font-size: 24px;
-          color: black;
-        }
-        @media screen and (min-width: 768px) {
-          .titleM {
-            display: none;
-          }
-          .titleD {
-            display: block;
-            font-size: 20px;
-          }
-          .PThree {
-            font-size: 20px;
-            width: 85%;
-            color: black;
-            margin-top: 20px;
-          }
-          .pOne {
-            width: 85%;
-          }
-          .PTwo {
-            font-size: 17px;
-            width: 85%;
-            color: black;
-            margin-top: 80px;
-          }
-          .PFour {
-            display: none;
-          }
-          .pattern {
-            margin-top: 10%;
-            width: 80%;
-          }
-          .positionButtoms {
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: nowrap;
-            align-items: flex-end;
-            justify-content: space-around;
-          }
-          .buttomTwo {
-            background-color: #939191;
-          }
-          .buttomThree {
-            background-color: #939191;
-          }
-        }
-      `}</style>
+      <style>{`
+                .titleD{
+                    display: none;
+                }
+                .buttomOne{
+                    background-color: #939191;
+                    padding: 9px;
+                    color: white;
+                    text-decoration: none;
+                    width: 161px;
+                    display: block;
+                } 
+                .buttomTwo{
+                    background-color: #a3a2a2;
+                    padding: 9px;
+                    color: white;
+                    text-decoration: none;
+                    width: 161px;
+                    display: block;
+                    text-align: center;
+                    margin-top: 13px;
+                } 
+                .buttomThree{
+                    background-color: black;
+                    padding: 9px;
+                    color: white;
+                    text-decoration: none;
+                    width: 161px;
+                    display: block;
+                    text-align: center;
+                    margin-top: 13px;
+                }
+                .positionButtoms{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    margin-bottom:20%;
+                }
+                .firstPart{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                }
+                .secondPart{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                }
+                .pOne{
+                    margin-top: 60px;
+                    font-size: 17px;
+                    width: 75%;
+                }
+                .PTwo{
+                    width: 75%;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-top: 40px;
+                }
+                .PThree{
+                   width: 75%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-top: 40px;
+                }
+                .PFour{
+                   width: 75%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-top: 40px;
+                }
+                .pattern{
+                    width: 100%;
+                    margin-bottom: 60px;
+                    margin-top: 14%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .picture{
+                    width: 100%;  
+                }
+                .Ptitle{
+                    font-size:24px;
+                    color:black
+                }
+                @media screen and (min-width: 768px) {
+                    .titleM{
+                        display: none;
+                    }
+                    .titleD{
+                        display: block;
+                        font-size: 20px;
+                    }
+                    .PThree{
+                        font-size: 20px;
+                        width: 85%;
+                        color: black;
+                        margin-top: 20px;
+                    }
+                    .pOne{
+                        width: 85%;
+                    }
+                    .PTwo{
+                        font-size: 17px;
+                        width: 85%;
+                        color: black;
+                        margin-top: 80px;
+                    }
+                    .PFour{
+                        display: none;
+                    }
+                    .pattern{
+                        margin-top: 10%;
+                        width: 80%;
+                    }
+                    .positionButtoms {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        flex-wrap: nowrap;
+                        align-items: flex-end;
+                        justify-content: space-around;
+                    }
+                    .buttomTwo{background-color: #939191;}
+                    .buttomThree{background-color: #939191;}
+                }
+            `}</style>
     </div>
   );
 }

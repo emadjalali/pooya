@@ -22,7 +22,10 @@ export default function Suppliers() {
           <Image src={pictureD}></Image>
         </div>
       </div>
-      <div className="secondPart" style={{ direction: 'rtl' }}>
+      <div
+        className="secondPart"
+        style={{ direction: 'rtl', textAlign: 'justify', lineHeight: '30px' }}
+      >
         <div className="POne">
           <p className="PD">
             آنچه کمک میکند یک ساختمان،«ساختمان» شود، متریال، تکنولوژی، خدمات زیرمجموعه معماری و ساخت
@@ -132,12 +135,12 @@ export default function Suppliers() {
         }
         .POne {
           margin-top: 60px;
-          font-size: 23px;
+          font-size: 25px;
           width: 75%;
           font-family: system-ui;
         }
         .PTwo {
-          font-size: 26px;
+          font-size: 29px;
           font-weight: 700;
           width: 75%;
           margin-top: 50px;
@@ -153,13 +156,10 @@ export default function Suppliers() {
         }
         .PFour {
           margin-top: 30px;
-          font-size: 23px;
+          font-size: 25px;
           width: 75%;
           font-family: system-ui;
           margin-bottom: 80px;
-        }
-        p {
-          margin-bottom: 0px;
         }
         .pictureM {
           width: 100%;

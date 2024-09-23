@@ -23,7 +23,10 @@ export default function City() {
                     <Image src={pictureD}></Image>
                 </div> */}
       </div>
-      <div className="secondPart" style={{ direction: 'rtl' }}>
+      <div
+        className="secondPart"
+        style={{ direction: 'rtl', textAlign: 'justify', lineHeight: '30px' }}
+      >
         <div className="POne">
           <p style={{ marginBottom: '30px' }}>
             برند یک شهر ، همه آن چیزی است که شهروندان، ساکنین و مخاطبان شهر از آن در ذهن و قلب خود
@@ -163,9 +166,7 @@ export default function City() {
         .FirstLine {
           color: black;
         }
-        p {
-          margin-bottom: 0px;
-        }
+
         .picture {
           width: 90%;
         }

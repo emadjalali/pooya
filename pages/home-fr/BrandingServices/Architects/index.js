@@ -21,7 +21,10 @@ export default function Architects() {
           </div>
         </div>
       </div>
-      <div className="secondPart" style={{ direction: 'rtl' }}>
+      <div
+        className="secondPart"
+        style={{ direction: 'rtl', textAlign: 'justify', lineHeight: '30px' }}
+      >
         <div className="POne">
           <p>
             این سوال ها، ریشه های یک برند اصیل در حرفه معماری است. ریشه هایی منحصر به فرد برای هر
@@ -181,9 +184,7 @@ export default function Architects() {
           font-family: system-ui;
           margin-bottom: 80px;
         }
-        p {
-          margin-bottom: 0px;
-        }
+
         .picture {
           width: 85%;
           margin-bottom: 70px;

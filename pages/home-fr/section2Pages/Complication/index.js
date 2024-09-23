@@ -16,7 +16,7 @@ export default function Complication(){
                 <h1 className="title">عارضه یابی برند</h1>
                 <Image className="picture" src={picture}></Image>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "30px"}}>
                 <div className="POneD">
                    <p className="pD">گاهی به عنوان مدیران برند آنقدر درگیر جزئیات کسب و کار می شوید که نمیدانید چرا با وجود هزینه هایی نه چندان کم در حوزه برندسازی و بازاریابی، به نتیجه مطلوب نمی رسید.</p>
                    <p>برای روشن شدن دلایل و تحلیل این موضوع، نیاز به بررسی کسب و کار و فعالیت های شما در این کسب و کار از نگاه فرد سوم و متخصص در کسب و کار، برندسازی، بازاریابی دارید</p>
@@ -43,7 +43,7 @@ export default function Complication(){
             </div>
             <div className="pattern">
                 <Image src={pattern} style={{width:"3%"}}></Image>
-            </div><style>{`
+            </div><style jsx>{`
                 .label{
                     font-size: 19px;
                     color: #6a6969;

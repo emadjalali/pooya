@@ -26,7 +26,10 @@ export default function Creators() {
           <Image src={pictureD}></Image>
         </div>
       </div>
-      <div className="secondPart" style={{ direction: 'rtl' }}>
+      <div
+        className="secondPart"
+        style={{ direction: 'rtl', textAlign: 'justify', lineHeight: '30px' }}
+      >
         <div className="POne">
           <p>
             حس یک نگاه برای شرکت های ساختمانی، توسعه دهندگان املاک و مستغلات و سازندگانی که کسب و
@@ -187,7 +190,7 @@ export default function Creators() {
                     width: 75%;
                     font-family: '__myFont_c3a675';
                 }
-                p{margin-bottom:0px;}
+                
                 .pictureM{
                     width: 75%;  
                 }

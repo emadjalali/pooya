@@ -19,7 +19,7 @@ export default function CreateProject(){
                 <h1 className="title">خلق پروژه های ماندگار و برندسازی ساختمان,<br/>(طراحی و توسعه معماری با رویکرد یکپارچه ی برند)</h1>
                 <Image className="picture" src={picture}></Image>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "26px"}}>
                 <div className="POneD">
                    <p className="pD">ساختمان، محصول عجیبی است. مهمترین محصول صنعت ساختمان که حاصل همکاری افراد، برندها، محصولات، خدمات، نگرشها، ارزش ها، اقتصاد، فرهنگ، جامعه و بسیاری المان های مشهود و نامشهود است.</p>
                    <p>برندسازی محصولی با این مولفه ها(به معنای اصولی و اصیل)، نگرشی را فراتر از انتخاب یک نام جذاب، نمای چشم گیر، برگزاری رویداد افتتاحیه و یا معرفی ساختمان در ژورنال ها و رسانه ها می طلبد؛ به خصوص اگر بپذیریم که ساختمان زنده است و علاوه بر جسم، روح و جان دارد! ما بر این باوریم که در کنار کیفیت، ظاهر، منطقه و... ، عوامل مشهود و نامشهود مشخصی در انتخاب مخاطب امروز برای خرید یک ساختمان یا مشارکت و سرمایه گذاری تاثیر می گذارد. عواملی فراتر از قیمت که ما در حس یک نگاه به آنها دست یافته ایم؛ عواملی پیچیده اما ساده</p>
@@ -115,9 +115,10 @@ export default function CreateProject(){
                     margin-bottom: 40px;
                 }
                 .PThree{
-                    font-size: 32px;
+                    font-size: 30px;
                     width: 75%;
-                    color: #00566f
+                    color: #00566f;
+                    // line-height:15px;
                 }
                 .picture{
                     width: 75%;  
@@ -125,7 +126,7 @@ export default function CreateProject(){
                 // .pD{
                 //   margin-bottom: 30px;  
                 // }
-                p{margin-bottom:0px}
+                
                 @media screen and (min-width: 768px) {
                     .title{
                         margin-bottom: 50px;
@@ -150,6 +151,7 @@ export default function CreateProject(){
                     .PThree{
                         width: 60%;
                         font-size: 18px;
+                        line-height: 5px;
                     }
                     .PFour{
                         width: 60%;

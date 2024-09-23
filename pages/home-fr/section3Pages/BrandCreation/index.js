@@ -14,7 +14,7 @@ export default function BrandCreation(){
                 <h1 className="title">خلق برند<br/>(طراحی استراتزی برند و هویت برند)</h1>
                 <Image src={picture} className="picture"></Image>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "26px"}}>
                 <div className="POne">
                     <p>برند ها مانند انسان ها خلق می شوند. چیستی برند (که در ادبیات تخصصی برند از آن با نام استراتزی برند یاد میکنیم) به طراحی ابعاد مختلف برند می پردازد. ابعاد منطبق بر چرایی کشف شده که هر یک معروف بخشی از اصالت برند است</p>
                 </div>
@@ -50,13 +50,14 @@ export default function BrandCreation(){
                 <div>
                     <a className="buttomThree"  href="#">نمونه پروژه ها</a>
                 </div>
-            </div><style>{`
+            </div><style jsx global>{`
                 .title{
+                    direction: ltr;
                     margin-top: 80px;
-                    margin-bottom: 80px;
+                    margin-bottom: 15px;
                     width: 75%;
                     text-align: end;
-                    font-size:30px
+                    font-size:25px
                 }
                 .buttomOne{
                     background-color: #939191;
@@ -116,16 +117,16 @@ export default function BrandCreation(){
                     font-weight: 700;
                     margin-top: 40px;
                     color: #ffc070;
+                    line-height: 10px;
                 }
-                p{
-                    margin-bottom: 0px;
-                }
+
                 .PThree{
                    width: 75%;
                     font-size: 25px;
                     font-weight: 700;
                     margin-top: 40px;
                     color: #ffc070;
+                    line-height: 10px;
                 }
                 .pattern{
                     width: 75%;
@@ -136,7 +137,7 @@ export default function BrandCreation(){
                     align-items: center;
                 }
                 .picture{
-                    width: 75%;  
+                    width: 75%;
                 }
                 .Ptitle{
                     font-size:24px;

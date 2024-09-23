@@ -14,7 +14,7 @@ export default function BrandDiscovery(){
                 <h1 className="title">کشف برند</h1>
                 <Image src={picture} className="picture"></Image>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl" , textAlign: "justify", lineHeight: "26px"}}>
                 <div className="POne">
                     <p>در حس یک نگاه، پیش از هر چیز به شیوه ای ساختارمند (و البته چالش بر انگیز) به شناخت انسان با یک سازمان می پردازیم، به این شناخت عمق می دهیم سپس از دل آن مفاهیمی منحصر به فرد استخراج میکنیم؛ مفاهیمی که فلسفه ی وجودی برند یک فرد یا یک سازمان را شکل می دهند</p>
                 </div>
@@ -41,7 +41,7 @@ export default function BrandDiscovery(){
                 <div>
                     <a className="buttomThree"  href="#">نمونه پروژه ها</a>
                 </div>
-            </div><style>{`
+            </div><style jsx>{`
                 .title{
                     margin-top: 80px;
                     margin-bottom: 80px;
@@ -106,9 +106,7 @@ export default function BrandDiscovery(){
                     margin-top: 40px;
                     color: orange;
                 }
-                p{
-                    margin-bottom: 0px;
-                }
+
                 .PThree{
                     font-size: 25px;
                     font-weight: 700;

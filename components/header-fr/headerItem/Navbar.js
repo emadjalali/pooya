@@ -151,212 +151,203 @@ const Nav = ({ btnNav, setBtnNav }) => {
         </li>
       </ul>
       <style jsx>{`
-				.ph:hover{
-					color:  #ff8100;
-				}
-				.firstNIshow{
-					color:  #ff8100;
-				}
-				.firstNIhide{
-					color: white
-				}
-				.navshow {
-					display: block;
-					width:400%;
+        .ph:hover {
+          color: #ff8100;
+        }
+        .firstNIshow {
+          color: #ff8100;
+        }
+        .firstNIhide {
+          color: white;
+        }
+        .navshow {
+          display: block;
+          width: 400%;
+        }
+        .navhide {
+          display: none;
+        }
+        .secondBtn {
+          position: absolute;
+          top: 5px;
+          width: auto;
+          margin-right: 238px;
+        }
 
-				}
-				.navhide {
-					display: none;
-				}
-				.secondBtn{
-					position: absolute;
-					top:5px;
-   					width: auto;
-    				margin-right: 238px;
-				}
-				}
-				.firstNI{
-					font-size:15px;
-					margin-left:35px;
-				}
+        .firstNI {
+          font-size: 15px;
+          margin-left: 35px;
+        }
 
-				.nav {
-					display: flex;
-					flex-direction: column;
-					font-size: 26px;
-					background-color: #0e0a0a;
-					height: 100vh;
-					text-align: start;
-    				margin-right: 15px;
-				}
+        .nav {
+          display: flex;
+          flex-direction: column;
+          font-size: 26px;
+          background-color: #0e0a0a;
+          height: 100vh;
+          text-align: start;
+          margin-right: 15px;
+        }
 
-				.navitem {
-    				padding-left: 30px;
-    				padding-top: 1px;
-    				font-size: 12.5px;
-					{/* min-height: 65px; */}
-				
-				}
+        .navitem {
+          padding-left: 30px;
+          padding-top: 1px;
+          font-size: 12.5px;
+        }
 
-				.branditem {
-					padding-top: 5px;
-					font-size: 15px;
-					
-				}
-				.Menu{
-					color: white;
-    				text-decoration: none;
-				}
-				.Menu:hover{
-					color: #ff5700;
-				}
-			@media screen and (min-width: 330px){
-				.navitem {
-					font-size: 12.5px;
-				}
-				.secondBtn{
-					 width: 90%;
-				}
-			}
-			@media screen and (min-width: 390px){
-				.navitem {
-					padding-top: 20px;
-					font-size: 17px;
-				}
-				.secondBtn{
-					margin-right: 322px;
-				}
-			}
-			@media screen and (min-width: 425px){
-				.secondBtn{
-       				width: auto;
-        			margin-right: 335px;
-					 
-				}
-			}
-				@media screen and (min-width: 560px){
-					.navitem{
-						font-size:22px;
-					}
-					.firstNI{
-						font-size:20px;
-					}
-					.secondBtn{
-						margin-right: 430px;
-					}
-				}
+        .branditem {
+          padding-top: 5px;
+          font-size: 15px;
+        }
+        .Menu {
+          color: white;
+          text-decoration: none;
+        }
+        .Menu:hover {
+          color: #ff5700;
+        }
+        @media screen and (min-width: 330px) {
+          .navitem {
+            font-size: 12.5px;
+          }
+          .secondBtn {
+            width: 90%;
+          }
+        }
+        @media screen and (min-width: 390px) {
+          .navitem {
+            padding-top: 20px;
+            font-size: 17px;
+          }
+          .secondBtn {
+            margin-right: 322px;
+          }
+        }
+        @media screen and (min-width: 425px) {
+          .secondBtn {
+            width: auto;
+            margin-right: 335px;
+          }
+        }
+        @media screen and (min-width: 560px) {
+          .navitem {
+            font-size: 22px;
+          }
+          .firstNI {
+            font-size: 20px;
+          }
+          .secondBtn {
+            margin-right: 430px;
+          }
+        }
 
-				@media screen and (min-width: 768px) {
-				.ph:hover{
-					color:  white;
-				}
-				.HVR:hover{
-					background-color: #ff8100;
-				}
-				.Menu{
-					color:black
-				}
-				.ul{
-					padding-right: 30px;
-    				font-weight: 600;
-				}
-				.navshow{
-					background-color: white;
-					color: black;
-    				text-align: start;
-					margin-top: 15px;
-					margin-right: -20px;
-				}
-				.firstNI{
-       				 margin-left: -10px;
-        			font-size: 16px;
-        			margin-right: -15px;
-				}
-				.secondBtn{
-					top: 8px;
-    				position: absolute;
-    				left: 2px;
-				}
-					.nav {
-						display: flex;
-						flex-direction: row;
-						text-align: center;
-						font-size: 16px;
-						height: inherit;
-						direction: rtl;
-					}
-					Link{
-						font-size: 14px;
-					}
-					.navitem {
-						padding-left: 0px;
-						flex-grow: 1;
-						font-size:16px;
-						height: 65px;
-					}
+        @media screen and (min-width: 768px) {
+          .ph:hover {
+            color: white;
+          }
+          .HVR:hover {
+            background-color: #ff8100;
+          }
+          .Menu {
+            color: black;
+          }
+          .ul {
+            padding-right: 30px;
+            font-weight: 600;
+          }
+          .navshow {
+            background-color: white;
+            color: black;
+            text-align: start;
+            margin-top: 15px;
+            margin-right: -20px;
+          }
+          .firstNI {
+            margin-left: -10px;
+            font-size: 16px;
+            margin-right: -15px;
+          }
+          .secondBtn {
+            top: 8px;
+            position: absolute;
+            left: 2px;
+          }
+          .nav {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            font-size: 16px;
+            height: inherit;
+            direction: rtl;
+          }
+          Link {
+            font-size: 14px;
+          }
+          .navitem {
+            padding-left: 0px;
+            flex-grow: 1;
+            font-size: 16px;
+            height: 65px;
+          }
 
-					.navitem:hover .brandfor {
-						opacity: 1;
-						visibility: visible;
-						transition: opacity 0.2s ease-in-out, visibility 0.2s;
-					}
-					.branditem {
-						padding-left: 0px;
-						padding-top: 5px;
-					}
-					.longitem {
-						font-size: 12px;
-						line-height: 12px;
-					}
-				}
-				@media screen and (min-width: 850px){
-					.secondBtn{
-						left:10px
-					}
-				}
-				@media screen and (min-width: 970px){
-					.secondBtn{
-						left:20px
-					}
-				}
-				@media screen and (min-width: 1080px){
-					.secondBtn{
-						left:30px
-					}
-				}
-				@media screen and (min-width: 1120px){
-					.secondBtn{
-						left: 30px
-					}
-					.navitem {
-						font-size:18px
-					}
-					.firstNI{
-						font-size:17px
-					}
-				}
-				@media screen and (min-width: 1245px){
-					// .secondBtn{
-					// 	left:30px
-					// }
-					.navitem {
-						font-size:20px
-					}
-					.firstNI{
-						font-size:19px
-					}
-				}
-				@media screen and (min-width: 1300px){
-					// .secondBtn{
-					// 	
-					// }
-				}
-				@media screen and (min-width: 1310px){
-					.secondBtn{
-						left: 40px;
-					}
-				}
-			`}</style>
+          .navitem:hover .brandfor {
+            opacity: 1;
+            visibility: visible;
+            transition:
+              opacity 0.2s ease-in-out,
+              visibility 0.2s;
+          }
+          .branditem {
+            padding-left: 0px;
+            padding-top: 5px;
+          }
+          .longitem {
+            font-size: 12px;
+            line-height: 12px;
+          }
+        }
+        @media screen and (min-width: 850px) {
+          .secondBtn {
+            left: 10px;
+          }
+        }
+        @media screen and (min-width: 970px) {
+          .secondBtn {
+            left: 20px;
+          }
+        }
+        @media screen and (min-width: 1080px) {
+          .secondBtn {
+            left: 30px;
+          }
+        }
+        @media screen and (min-width: 1120px) {
+          .secondBtn {
+            left: 30px;
+          }
+          .navitem {
+            font-size: 18px;
+          }
+          .firstNI {
+            font-size: 17px;
+          }
+        }
+        @media screen and (min-width: 1245px) {
+          .navitem {
+            font-size: 20px;
+          }
+          .firstNI {
+            font-size: 19px;
+          }
+        }
+        @media screen and (min-width: 1300px) {
+        }
+        @media screen and (min-width: 1310px) {
+          .secondBtn {
+            left: 40px;
+          }
+        }
+      `}</style>
     </nav>
   );
 };

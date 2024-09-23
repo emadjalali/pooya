@@ -21,7 +21,7 @@ export default function creativeSolution(){
                     <Image src={pattern} style={{width:"32%"}}></Image>
                 </div>
             </div>
-            <div className="secondPart" style={{direction:"rtl"}}>
+            <div className="secondPart" style={{direction:"rtl", textAlign: "justify", lineHeight: "30px"}}>
                 <div className="POne">
                    <p className="pD">راهکار به ایده یا مجموعه ایده هایی گفته می شود که برای پاسخگویی به چالش یا دستیابی به اهدافی مشخص طراحی و ارائه می شود.</p>
                    <p>خلاقیت نیز بیشتر از متفاوت بودن یا خاص بودن، نوعی نگرش است، نگرشی هوشمند که هرچه در نتیجه ی آن عمیق می شویم، جذابیت و اثربخشی اش را بیشتر درک میکنیم</p>
@@ -100,9 +100,7 @@ export default function creativeSolution(){
                     width: 75%;
                     font-family: system-ui;
                 }
-                p{
-                    margin-bottom: 0px;
-                }
+
                 .PTwo{
                     font-size: 26px;
                     font-weight: 700;
